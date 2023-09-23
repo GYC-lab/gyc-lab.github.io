@@ -1,4 +1,4 @@
-- link to my website: gyc-lab.github.io
+- [link to my website](gyc-lab.github.io)
 
 ---
 (Original Info)
