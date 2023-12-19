@@ -16,6 +16,5 @@ redirect_from:
 $$
 \frac{\partial \boldsymbol{u}}
   {\partial t}  + 
-  \boldsymbol{u} \cdot   \nabla \boldsymbol{u} = 
-  - \frac{1}{\rho } \nabla  p + \nu \nabla ^2 \boldsymbol{u} + \boldsymbol{f}
+  \boldsymbol{u} \cdot   \nabla \boldsymbol{u} = - \frac{1}{\rho } \nabla  p + \nu \nabla ^2 \boldsymbol{u} + \boldsymbol{f}
 $$
