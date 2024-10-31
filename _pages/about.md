@@ -19,4 +19,4 @@ $$
   \boldsymbol{u} \cdot   \nabla \boldsymbol{u} = - \frac{1}{\rho } \nabla  p + \nu \nabla ^2 \boldsymbol{u} + \boldsymbol{f}
 $$
 
-- Hello
+- Let's expore the world!
