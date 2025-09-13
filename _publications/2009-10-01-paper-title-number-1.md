@@ -1,11 +1,11 @@
 ---
 title: "粗糙壁面涡轮内流湍流模型"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+# permalink: /publication/2009-10-01-paper-title-number-1
+# excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2024-04-18
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+venue: '航空动力'
+# paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 citation: '葛宇辰，赵耀民. 粗糙壁面涡轮内流湍流模型[J]. 航空动力,2024,(02):49-53.'
 ---
 This paper is about the number 1. The number 2 is left for future work.
