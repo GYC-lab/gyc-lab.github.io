@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "Peking University, College of Engineering"
-date: 2014-01-01
+date: 2024-03-01
 location: "Beijing, China"
 ---
 
