@@ -8,7 +8,7 @@ venue: '航空动力'
 # paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 citation: '葛宇辰，赵耀民. 粗糙壁面涡轮内流湍流模型[J]. 航空动力,2024,(02):49-53.'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+<!-- This paper is about the number 1. The number 2 is left for future work. -->
 
 [Download paper here](http://academicpages.github.io/files/paper1.pdf)
 
