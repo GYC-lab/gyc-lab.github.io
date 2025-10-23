@@ -23,15 +23,21 @@ Let's expore the world!
 
 ### 📰 **News**
 
-- **Aug 2025** — Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland  
+- **Aug 2025** — Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland
+- **Jul 2025** — Oral presentation at *Chinese Congress of Theoretical and Applied Mechanics - 2025*, Changsha, China
+- **Aug 2024** — Oral presentation at *13th National Conference on Fluid Mechanics*, Harbin, China
 - **Jun 2024** — Oral presentation at *19th OpenFOAM Workshop*, Beijing, China  
 
 ---
 
 ### 🏆 **Honors & Awards**
 
+- **2022** — Excellent Graduate
 - **2021** — National Scholarship
+- **2021** — Finalist, Mathematical Contest in Modeling
 - **2020** — Aviation Industry Corporation (First-Class) Special Scholarship
+- **2020** — Team First Prize, 2020 China International Aircraft Design Challenge (CADC)
+- **2019** — Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship
 
 <p id="localtime" style="font-size:0.9em; color:gray;"></p>
 
