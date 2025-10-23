@@ -39,27 +39,48 @@ Let's expore the world!
 - **2020** — Team First Prize, 2020 China International Aircraft Design Challenge (CADC)
 - **2019** — Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship
 
+### 🎓 **Teaching**
+
+- **Spring 2024** — Teaching Assistant, *Computational Fluid Mechanics*, College of Engineering, Peking University  
+
+
+
 <p id="localtime" style="font-size:0.9em; color:gray;"></p>
 <script>
-function updateTime() {
-  const now = new Date();
-  // 以北京时间（UTC+8）为例
-  const options = {
-    timeZone: 'Asia/Shanghai',
-    hour12: false,
-    weekday: 'short',
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit'
-  };
-  const timeString = now.toLocaleString('en-US', options);
-  document.getElementById('localtime').textContent = '🕒 Local time: ' + timeString;
-}
-updateTime();
-setInterval(updateTime, 1000);
+(function () {
+  function updateTime() {
+    try {
+      const now = new Date();
+      const options = {
+        timeZone: 'Asia/Shanghai',
+        hour12: false,
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      };
+      const timeString = now.toLocaleString('en-US', options);
+      var el = document.getElementById('localtime');
+      if (el) el.textContent = '🕒 Local time: ' + timeString;
+    } catch (e) {
+      // 少数极旧浏览器不支持 timeZone 参数：退化到本地时间
+      var el = document.getElementById('localtime');
+      if (el) el.textContent = '🕒 Local time: ' + new Date().toLocaleString();
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      updateTime();
+      setInterval(updateTime, 1000);
+    });
+  } else {
+    updateTime();
+    setInterval(updateTime, 1000);
+  }
+})();
 </script>
 
 <div id="clustrmaps-widget">
