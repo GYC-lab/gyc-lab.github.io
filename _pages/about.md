@@ -39,11 +39,19 @@ Let's expore the world!
 - **2020** — Team First Prize, 2020 China International Aircraft Design Challenge (CADC)
 - **2019** — Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship
 
-### 🎓 **Teaching**
+### 🎓 **Education**
 
-- **Spring 2024** — Teaching Assistant, *Computational Fluid Mechanics*, College of Engineering, Peking University  
+- **2022–Present** — **Ph.D.**, Fluid Mechanics, Peking University  
+- **2018–2022** — **B.E.**, Aerocraft Design and Engineering, Northwestern Polytechnical University  
+- **2015–2018** — **High School**, Zhejiang Zhuji Middle School
 
+---
 
+### 📘 **Teaching**
+
+- **Spring 2024** — *Teaching Assistant*, **Computational Fluid Mechanics**, College of Engineering, Peking University  
+
+---
 
 <p id="localtime" style="font-size:0.9em; color:gray;"></p>
 <script>
@@ -83,6 +91,13 @@ Let's expore the world!
 })();
 </script>
 
-<div id="clustrmaps-widget">
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=a"></script>
+<div id="clustrmaps-widget" style="max-width:520px;margin:0.5rem 0;">
+  <script type="text/javascript" id="clustrmaps"
+          src="//cdn.clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=a&t=tt">
+  </script>
+  <noscript>
+    <a href="https://clustrmaps.com/site/1c8ae" title="ClustrMaps">
+      <img src="//www.clustrmaps.com/map_v2.png?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff" alt="ClustrMaps" />
+    </a>
+  </noscript>
 </div>
