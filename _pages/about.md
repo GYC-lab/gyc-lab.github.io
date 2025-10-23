@@ -40,7 +40,6 @@ Let's expore the world!
 - **2019** — Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship
 
 <p id="localtime" style="font-size:0.9em; color:gray;"></p>
-
 <script>
 function updateTime() {
   const now = new Date();
