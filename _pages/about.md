@@ -61,3 +61,7 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 1000);
 </script>
+
+<div id="clustrmaps-widget">
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=a"></script>
+</div>
