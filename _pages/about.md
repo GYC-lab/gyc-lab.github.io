@@ -91,13 +91,16 @@ Let's expore the world!
 })();
 </script>
 
+{% raw %}
 <div id="clustrmaps-widget" style="max-width:520px;margin:0.5rem 0;">
-  <script type="text/javascript" id="clustrmaps"
-          src="//cdn.clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=a&t=tt">
-  </script>
-  <noscript>
-    <a href="https://clustrmaps.com/site/1c8ae" title="ClustrMaps">
-      <img src="//www.clustrmaps.com/map_v2.png?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff" alt="ClustrMaps" />
-    </a>
-  </noscript>
+  <a href="https://clustrmaps.com/site/1c8ae" rel="nofollow noopener" target="_blank" title="ClustrMaps">
+    <img id="clustrmaps-fallback"
+         src="https://www.clustrmaps.com/map_v2.png?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=480"
+         alt="ClustrMaps" style="width:100%;height:auto;display:block;" referrerpolicy="no-referrer" />
+  </a>
+
+  <script id="clustrmaps"
+          src="https://cdn.clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=480&t=tt"
+          async></script>
 </div>
+{% endraw %}
