@@ -281,6 +281,7 @@ DEPENDENCIES
   hawkins
   jekyll-feed
   jekyll-sitemap
+  webrick (~> 1.9)
 
 BUNDLED WITH
    2.7.2

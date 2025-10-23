@@ -3,16 +3,16 @@ current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/g
 creating Makefile
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-kort4c sitelibdir\=./.gem.20251023-17290-kort4c clean
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-77xyn6 sitelibdir\=./.gem.20251023-9596-77xyn6 clean
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-kort4c sitelibdir\=./.gem.20251023-17290-kort4c
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-77xyn6 sitelibdir\=./.gem.20251023-9596-77xyn6
 compiling cparse.c
 linking shared-object racc/cparse.so
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-kort4c sitelibdir\=./.gem.20251023-17290-kort4c install
-/usr/bin/install -c -m 0755 cparse.so ./.gem.20251023-17290-kort4c/racc
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-77xyn6 sitelibdir\=./.gem.20251023-9596-77xyn6 install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20251023-9596-77xyn6/racc
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-kort4c sitelibdir\=./.gem.20251023-17290-kort4c clean
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-77xyn6 sitelibdir\=./.gem.20251023-9596-77xyn6 clean

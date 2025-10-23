@@ -10,16 +10,16 @@ checking for cpuid.h... yes
 creating Makefile
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/json-2.15.1/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-icgyxk sitelibdir\=./.gem.20251023-17290-icgyxk clean
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-fda3ry sitelibdir\=./.gem.20251023-9596-fda3ry clean
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/json-2.15.1/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-icgyxk sitelibdir\=./.gem.20251023-17290-icgyxk
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-fda3ry sitelibdir\=./.gem.20251023-9596-fda3ry
 compiling parser.c
 linking shared-object json/ext/parser.so
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/json-2.15.1/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-icgyxk sitelibdir\=./.gem.20251023-17290-icgyxk install
-/usr/bin/install -c -m 0755 parser.so ./.gem.20251023-17290-icgyxk/json/ext
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-fda3ry sitelibdir\=./.gem.20251023-9596-fda3ry install
+/usr/bin/install -c -m 0755 parser.so ./.gem.20251023-9596-fda3ry/json/ext
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/json-2.15.1/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-icgyxk sitelibdir\=./.gem.20251023-17290-icgyxk clean
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-fda3ry sitelibdir\=./.gem.20251023-9596-fda3ry clean

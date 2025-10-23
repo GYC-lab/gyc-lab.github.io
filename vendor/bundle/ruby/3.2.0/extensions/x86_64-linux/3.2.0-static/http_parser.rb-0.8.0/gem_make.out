@@ -3,10 +3,10 @@ current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/g
 creating Makefile
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-s0mq1l sitelibdir\=./.gem.20251023-17290-s0mq1l clean
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-p9dz9e sitelibdir\=./.gem.20251023-9596-p9dz9e clean
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-s0mq1l sitelibdir\=./.gem.20251023-17290-s0mq1l
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-p9dz9e sitelibdir\=./.gem.20251023-9596-p9dz9e
 compiling ruby_http_parser.c
 ruby_http_parser.c: In function ‘Parser_execute’:
 ruby_http_parser.c:365:17: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
@@ -24,8 +24,8 @@ compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.so
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-s0mq1l sitelibdir\=./.gem.20251023-17290-s0mq1l install
-/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20251023-17290-s0mq1l
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-p9dz9e sitelibdir\=./.gem.20251023-9596-p9dz9e install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20251023-9596-p9dz9e
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-s0mq1l sitelibdir\=./.gem.20251023-17290-s0mq1l clean
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-p9dz9e sitelibdir\=./.gem.20251023-9596-p9dz9e clean

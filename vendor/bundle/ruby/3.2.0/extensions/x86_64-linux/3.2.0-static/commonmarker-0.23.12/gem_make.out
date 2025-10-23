@@ -4,10 +4,10 @@ checking for whether -std=c99 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/commonmarker-0.23.12/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-sj299z sitelibdir\=./.gem.20251023-17290-sj299z clean
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-rjmyvd sitelibdir\=./.gem.20251023-9596-rjmyvd clean
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/commonmarker-0.23.12/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-sj299z sitelibdir\=./.gem.20251023-17290-sj299z
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-rjmyvd sitelibdir\=./.gem.20251023-9596-rjmyvd
 compiling arena.c
 compiling autolink.c
 compiling blocks.c
@@ -80,8 +80,8 @@ compiling xml.c
 linking shared-object commonmarker/commonmarker.so
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/commonmarker-0.23.12/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-sj299z sitelibdir\=./.gem.20251023-17290-sj299z install
-/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20251023-17290-sj299z/commonmarker
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-rjmyvd sitelibdir\=./.gem.20251023-9596-rjmyvd install
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20251023-9596-rjmyvd/commonmarker
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/commonmarker-0.23.12/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20251023-17290-sj299z sitelibdir\=./.gem.20251023-17290-sj299z clean
+make DESTDIR\= sitearchdir\=./.gem.20251023-9596-rjmyvd sitelibdir\=./.gem.20251023-9596-rjmyvd clean
