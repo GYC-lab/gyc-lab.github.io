@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yuchen Ge"
+  name             : "Yuchen Ge (葛宇辰)"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  # bio              : "Your biography for the left-hand sidebar"
   location         : "Beijing"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
