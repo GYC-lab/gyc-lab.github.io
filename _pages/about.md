@@ -23,8 +23,15 @@ Let's expore the world!
 
 ### 📰 **News**
 
-- **[2025/08]** Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland (Aug 26–29, 2025)  
-- **[2024/06]** Oral presentation at *19th OpenFOAM Workshop*, Beijing, China (Jun 25–28, 2024)
+- **Aug 2025** — Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland  
+- **Jun 2024** — Oral presentation at *19th OpenFOAM Workshop*, Beijing, China  
+
+---
+
+### 🏆 **Honors & Awards**
+
+- **2021** — National Scholarship
+- **2020** — Aviation Industry Corporation (First-Class) Special Scholarship
 
 <p id="localtime" style="font-size:0.9em; color:gray;"></p>
 
