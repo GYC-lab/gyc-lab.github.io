@@ -1,0 +1,19 @@
+current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/home/ycge/.rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20251023-17290-40yhuh sitelibdir\=./.gem.20251023-17290-40yhuh clean
+
+current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20251023-17290-40yhuh sitelibdir\=./.gem.20251023-17290-40yhuh
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20251023-17290-40yhuh sitelibdir\=./.gem.20251023-17290-40yhuh install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20251023-17290-40yhuh
+
+current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20251023-17290-40yhuh sitelibdir\=./.gem.20251023-17290-40yhuh clean
