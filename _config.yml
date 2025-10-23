@@ -82,13 +82,13 @@ analytics:
 author:
   name             : "Yuchen Ge (葛宇辰)"
   avatar           : "profile.png"
-  # bio              : "Your biography for the left-hand sidebar"
+  bio              : "Your biography for the left-hand sidebar"
   location         : "Beijing"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=ol8S6cwAAAAJ&hl=zh-CN"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "https://www.researchgate.net/profile/Yuchen_Ge2"
   uri              :
   bitbucket        :
   codepen          :
