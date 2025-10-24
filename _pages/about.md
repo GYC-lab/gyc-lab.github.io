@@ -32,9 +32,29 @@ Let's expore the world!
 
 ### 🎓 **Education**
 
-- **2022–Present** — **Ph.D.**, Fluid Mechanics, Peking University  
-- **2018–2022** — **B.E.**, Aerocraft Design and Engineering, Northwestern Polytechnical University  
-- **2015–2018** — **High School**, Zhejiang Zhuji Middle School
+<div style="display:flex;align-items:center;margin-bottom:0.8rem;">
+  <img src="/images/pku_logo.png" alt="Peking University" style="width:40px;height:40px;margin-right:10px;">
+  <div>
+    <strong>Ph.D.</strong>, Fluid Mechanics, Peking University<br>
+    <small>2022–Present</small>
+  </div>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:0.8rem;">
+  <img src="/images/nwpu_logo.png" alt="Northwestern Polytechnical University" style="width:40px;height:40px;margin-right:10px;">
+  <div>
+    <strong>B.E.</strong>, Aerocraft Design and Engineering, Northwestern Polytechnical University<br>
+    <small>2018–2022</small>
+  </div>
+</div>
+
+<div style="display:flex;align-items:center;">
+  <img src="/images/zjzj_logo.png" alt="Zhejiang Zhuji Middle School" style="width:40px;height:40px;margin-right:10px;">
+  <div>
+    <strong>High School</strong>, Zhejiang Zhuji Middle School<br>
+    <small>2015–2018</small>
+  </div>
+</div>
 
 ---
 
