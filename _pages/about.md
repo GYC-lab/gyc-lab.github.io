@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello everyone!"
+title: "Yuchen Ge"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
