@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
+# 👋 **Hello, everyone!**
+
 I am a fourth-year Ph.D. student in Fluid Mechanics at Peking University.
 Previously, I received my bachelor’s degree in Aerocraft Design and Engineering from Northwestern Polytechnical University.
 
@@ -30,29 +32,64 @@ Let's expore the world!
 
 ---
 
+### 🛠️ **Projects**
+
+
+
+---
+
 ### 🎓 **Education**
 
-<div style="display:flex;align-items:center;margin-bottom:0.8rem;">
-  <img src="/images/pku_logo.png" alt="Peking University" style="width:40px;height:40px;margin-right:10px;">
-  <div>
-    <strong>Ph.D.</strong>, Fluid Mechanics, Peking University<br>
-    <small>2022–Present</small>
-  </div>
-</div>
+<style>
+  .edu-list {
+    margin-left: 0.6em; /* 与 markdown 列表缩进匹配 */
+  }
+  .edu-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+  }
+  .edu-bullet {
+    width: 1.0em;  /* bullet宽度与markdown一致 */
+    text-align: center;
+    font-size: 1.6em; /* 控制圆点大小 */
+    line-height: 1.5;
+    color: #444; /* 稍微灰一点 */
+    margin-top: 0.3em; /* 微调垂直位置 */
+  }
+  .edu-logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 6px; /* 与文字保持间距 */
+  }
+</style>
 
-<div style="display:flex;align-items:center;margin-bottom:0.8rem;">
-  <img src="/images/nwpu_logo.png" alt="Northwestern Polytechnical University" style="width:40px;height:40px;margin-right:10px;">
-  <div>
-    <strong>B.E.</strong>, Aerocraft Design and Engineering, Northwestern Polytechnical University<br>
-    <small>2018–2022</small>
+<div class="edu-list">
+  <div class="edu-item">
+    <div class="edu-bullet">•</div>
+    <img class="edu-logo" src="/images/pku_logo.png" alt="Peking University">
+    <div>
+      <strong>Ph.D.</strong>, Fluid Mechanics, Peking University<br>
+      <small>2022–Present</small>
+    </div>
   </div>
-</div>
 
-<div style="display:flex;align-items:center;">
-  <img src="/images/zjzj_logo.png" alt="Zhejiang Zhuji Middle School" style="width:40px;height:40px;margin-right:10px;">
-  <div>
-    <strong>High School</strong>, Zhejiang Zhuji Middle School<br>
-    <small>2015–2018</small>
+  <div class="edu-item">
+    <div class="edu-bullet">•</div>
+    <img class="edu-logo" src="/images/nwpu_logo.png" alt="Northwestern Polytechnical University">
+    <div>
+      <strong>B.E.</strong>, Aerocraft Design and Engineering, Northwestern Polytechnical University<br>
+      <small>2018–2022</small>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-bullet">•</div>
+    <img class="edu-logo" src="/images/zjzj_logo.png" alt="Zhejiang Zhuji Middle School">
+    <div>
+      <strong>High School</strong>, Zhejiang Zhuji Middle School<br>
+      <small>2015–2018</small>
+    </div>
   </div>
 </div>
 
@@ -60,7 +97,7 @@ Let's expore the world!
 
 ### 📘 **Teaching**
 
-- **Spring 2024** — *Teaching Assistant*, **Computational Fluid Mechanics**, College of Engineering, Peking University  
+- **Spring 2024** — *Teaching Assistant*, **Computational Fluid Mechanics**, College of Engineering, Peking University
 
 ---
 
