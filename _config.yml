@@ -7,8 +7,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : ""
-# title                    : "Yuchen Ge's Lab"
+# title                    : ""
+title                    : "Yuchen Ge"
 # title_separator          : "-"
 title_separator          : ""
 name                     : &name "Yuchen Ge"
