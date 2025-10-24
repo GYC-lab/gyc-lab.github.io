@@ -39,3 +39,7 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.pub-entry { display:flex; gap:1rem; margin-bottom:2rem; }
+.pub-img { width:180px; height:180px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.1); }
+.citation { color:#555; font-size:.95rem; }

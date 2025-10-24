@@ -84,10 +84,10 @@ analytics:
 author:
   name             : "Yuchen Ge (葛宇辰)"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Today is a gift."
   location         : "Beijing"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=ol8S6cwAAAAJ&hl=zh-CN"
   email            :
   researchgate     : "https://www.researchgate.net/profile/Yuchen_Ge2"
@@ -105,7 +105,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "https://orcid.org/0009-0005-2608-4024"
+  # orcid            : "https://orcid.org/0009-0005-2608-4024"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
