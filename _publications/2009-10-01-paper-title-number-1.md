@@ -1,15 +1,27 @@
 ---
 title: "粗糙壁面涡轮内流湍流模型"
 collection: publications
-# permalink: /publication/2009-10-01-paper-title-number-1
-# excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2024-04-18
-venue: '航空动力'
-# paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: '葛宇辰，赵耀民. 粗糙壁面涡轮内流湍流模型[J]. 航空动力,2024,(02):49-53.'
+venue: "航空动力"
+paperurl: "http://academicpages.github.io/files/paper1.pdf"
+citation: "葛宇辰，赵耀民. 粗糙壁面涡轮内流湍流模型[J]. 航空动力, 2024, (02):49-53."
+teaser: /assets/images/pubs/rough-turbine-thumb.jpg
+header:
+  teaser: /images/mstile-144x144.png
+classes: publication
 ---
-<!-- This paper is about the number 1. The number 2 is left for future work. -->
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+<div class="pub-entry">
+  <img src="{{ '/images/mstile-144x144.png' | relative_url }}" alt="Rough turbine model" class="pub-img">
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+  <div class="pub-info">
+    <h2>粗糙壁面涡轮内流湍流模型</h2>
+    <p><strong>发表期刊：</strong> 航空动力 (2024)</p>
+    <p>
+      <a href="{{ page.paperurl }}" class="btn btn-primary">📄 下载论文</a>
+    </p>
+    <p class="citation">
+      葛宇辰，赵耀民. 粗糙壁面涡轮内流湍流模型[J]. 航空动力, 2024, (02):49-53.
+    </p>
+  </div>
+</div>
