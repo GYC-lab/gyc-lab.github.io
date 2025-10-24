@@ -30,15 +30,6 @@ Let's expore the world!
 
 ---
 
-### 🏆 **Honors & Awards**
-
-- **2022** — Excellent Graduate
-- **2021** — National Scholarship
-- **2021** — Finalist, Mathematical Contest in Modeling
-- **2020** — Aviation Industry Corporation (First-Class) Special Scholarship
-- **2020** — Team First Prize, 2020 China International Aircraft Design Challenge (CADC)
-- **2019** — Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship
-
 ### 🎓 **Education**
 
 - **2022–Present** — **Ph.D.**, Fluid Mechanics, Peking University  
@@ -50,6 +41,17 @@ Let's expore the world!
 ### 📘 **Teaching**
 
 - **Spring 2024** — *Teaching Assistant*, **Computational Fluid Mechanics**, College of Engineering, Peking University  
+
+---
+
+### 🏆 **Honors & Awards**
+
+- **2022** — Excellent Graduate
+- **2021** — National Scholarship
+- **2021** — Finalist, Mathematical Contest in Modeling
+- **2020** — Aviation Industry Corporation (First-Class) Special Scholarship
+- **2020** — Team First Prize, 2020 China International Aircraft Design Challenge (CADC)
+- **2019** — Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship
 
 ---
 
