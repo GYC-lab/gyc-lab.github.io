@@ -114,7 +114,7 @@ Let's expore the world!
 </script>
 
 {% raw %}
-<div id="clustrmaps-widget">
+<div id="clustrmaps-widget" style="width:100%;margin:0.5rem 0;">
   <script id="clustrmaps"
           src="https://cdn.clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&t=tt"
           async></script>
