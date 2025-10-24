@@ -10,8 +10,6 @@ author_profile: true
 - X. Zhu, **Y. Ge**, Y. Zhao\*, Z. Xiao and R. D. Sandberg, Boundary layer transition induced by surface roughness distributed over a low-pressure turbine blade, **Journal of Fluid Mechanics**, *Under review*
 - **葛宇辰**，赵耀民. 粗糙壁面涡轮内流湍流模型[J]. **航空动力**,2024,(02):49-53.
 
-
-
 <!-- <div class="pub-entry">
   <img src="{{ '/images/mstile-144x144.png' | relative_url }}" alt="Rough turbine model" class="pub-img">
 
