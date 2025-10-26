@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-- W. Shen, **Y. Ge**, Z. Han, Y. Zhao\* and Y. Yang\*, Constructing wall turbulence using hierarchically hairpin vortices, *In preparation* (arXiv preprint: <a href="https://arxiv.org/abs/2504.06761" target="_blank">https://arxiv.org/abs/2309.07528</a>)
+- W. Shen, **Y. Ge**, Z. Han, Y. Zhao\* and Y. Yang\*, Constructing wall turbulence using hierarchically hairpin vortices, *In preparation* (arXiv preprint: <a href="https://arxiv.org/abs/2504.06761" target="_blank">link</a>)
 - **Y. Ge**, X. Zhu, Y. Fang and Y. Zhao\*, Predicting laminar-turbulent transition in rough-wall turbine blades with a four-equation transition model, *In preparation*
 - X. Zhu, **Y. Ge**, Y. Zhao\*, Z. Xiao and R. D. Sandberg, Boundary layer transition induced by surface roughness distributed over a low-pressure turbine blade, **Journal of Fluid Mechanics**, *Under review*
 - **葛宇辰**，赵耀民. 粗糙壁面涡轮内流湍流模型[J]. **航空动力**,2024,(02):49-53.
