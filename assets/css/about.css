@@ -46,6 +46,18 @@ padding-left: 0;
 content: none !important;
 }
 
+/* --- TOC 层级缩进 --- */
+#toc-box ul ul {
+margin-left: 1rem;   /* 一级缩进 */
+border-left: 1px solid #ddd;
+padding-left: 0.75rem;
+}
+
+#toc-box ul ul ul {
+margin-left: 1rem;   /* 二级缩进 */
+border-left: 1px dashed #eee;
+}
+
 /* 美化目录内容 */
 #toc-box ul { list-style: none; margin: 0; padding: 0; }
 #toc-box li { margin: .25rem 0; }

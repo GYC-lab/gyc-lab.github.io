@@ -8,9 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-* 目录
+<div id="toc-box" markdown="1">
+<p class="toc-title"><strong>Table of Contents</strong></p>
+* TOC
 {:toc}
-{: #toc-box}
+</div>
+
 
 
 <!-- # 👋 **Hello, everyone!** -->
