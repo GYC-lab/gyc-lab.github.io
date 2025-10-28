@@ -8,6 +8,7 @@ redirect_from:
   - /about.html
 ---
 
+
 # 👋 **Hello, everyone!**
 
 I am a fourth-year Ph.D. student in Fluid Mechanics at Peking University.
@@ -25,6 +26,7 @@ Let's expore the world!
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=100&color=002FA7&width=435&lines=print+*%2C+%22Hello+World!%22;git+commit+-m+%22c'est+la+vie%22" alt="Typing SVG" /></a>
 
+
 ### 📰 **News**
 
 - **Aug 2025** — Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland
@@ -36,35 +38,9 @@ Let's expore the world!
 
 ### 🛠️ **Projects**
 
-
-
 ---
 
 ### 🎓 **Education**
-
-<style>
-  .edu-list {
-    margin-left: 0.6em; /* 与 markdown 列表缩进匹配 */
-  }
-  .edu-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 0.8rem;
-  }
-  .edu-bullet {
-    width: 1.0em;  /* bullet宽度与markdown一致 */
-    text-align: center;
-    font-size: 1.6em; /* 控制圆点大小 */
-    line-height: 1.5;
-    color: #444; /* 稍微灰一点 */
-    margin-top: 0.3em; /* 微调垂直位置 */
-  }
-  .edu-logo {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px 0 6px; /* 与文字保持间距 */
-  }
-</style>
 
 <div class="edu-list">
   <div class="edu-item">
@@ -98,7 +74,6 @@ Let's expore the world!
   </div>
 </div>
 
-
 ---
 
 ### 📘 **Teaching**
@@ -118,7 +93,20 @@ Let's expore the world!
 
 ---
 
-<p id="localtime" style="font-size:0.9em; color:gray;"></p>
+<!-- ----------------------------------------------------------------------- -->
+<!-- map -->
+{% raw %}
+<div id="clustrmaps-widget" style="width:100%;margin:0.5rem 0;">
+  <script id="clustrmaps"
+          src="https://cdn.clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=a&t=tt"
+          async></script>
+</div>
+{% endraw %}
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!-- time -->
+<!-- <p id="localtime" style="font-size:0.9em; color:gray;"></p>
 <script>
 (function () {
   function updateTime() {
@@ -154,12 +142,4 @@ Let's expore the world!
     setInterval(updateTime, 1000);
   }
 })();
-</script>
-
-{% raw %}
-<div id="clustrmaps-widget" style="width:100%;margin:0.5rem 0;">
-  <script id="clustrmaps"
-          src="https://cdn.clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=a&t=tt"
-          async></script>
-</div>
-{% endraw %}
+</script> -->

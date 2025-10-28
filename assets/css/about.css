@@ -1,0 +1,46 @@
+.edu-list {
+margin-left: 0.6em; /* 与 markdown 列表缩进匹配 */
+}
+.edu-item {
+display: flex;
+align-items: flex-start;
+margin-bottom: 0.8rem;
+}
+.edu-bullet {
+width: 1.0em;  /* bullet宽度与markdown一致 */
+text-align: center;
+font-size: 1.6em; /* 控制圆点大小 */
+line-height: 1.5;
+color: #444; /* 稍微灰一点 */
+margin-top: 0.3em; /* 微调垂直位置 */
+}
+.edu-logo {
+width: 40px;
+height: 40px;
+margin: 0 10px 0 6px; /* 与文字保持间距 */
+}
+/* --- Right-side TOC --- */
+#toc-box {
+  position: sticky;
+  top: 90px;
+  float: right;
+  width: 260px;
+  max-height: 70vh;
+  overflow: auto;
+  margin: 0 0 1rem 1.2rem;
+  padding: 0.75rem 1rem;
+  /* border: 1px solid #e5e5e5; */
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #fff;
+}
+#toc-box ul { list-style: none; padding-left: 0; margin: 0; }
+#toc-box li { margin: .25rem 0; }
+#toc-box a { text-decoration: none; }
+#toc-box a:hover { text-decoration: underline; }
+
+/* 避免目录与正文、右侧元素贴太近（可按需微调） */
+@media (min-width: 992px) {
+  .edu-list { max-width: 760px; }
+}
