@@ -19,28 +19,40 @@ width: 40px;
 height: 40px;
 margin: 0 10px 0 6px; /* 与文字保持间距 */
 }
+
 /* --- Right-side TOC --- */
 #toc-box {
-  position: sticky;
-  top: 90px;
-  float: right;
-  width: 260px;
-  max-height: 70vh;
-  overflow: auto;
-  margin: 0 0 1rem 1.2rem;
-  padding: 0.75rem 1rem;
-  /* border: 1px solid #e5e5e5; */
-  border: 1px solid #000000;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  background: #fff;
+position: fixed;
+top: 100px;        /* 距顶部距离，可根据导航栏高度调整 */
+right: 30px;       /* 靠右边留一点空间 */
+width: 240px;
+max-height: 75vh;
+overflow-y: auto;
+padding: 0.75rem 1rem;
+background: #fff;
+border: 1px solid #e5e5e5;
+border-radius: 10px;
+font-size: 0.9rem;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+z-index: 100;      /* 确保在最上层 */
 }
-#toc-box ul { list-style: none; padding-left: 0; margin: 0; }
-#toc-box li { margin: .25rem 0; }
-#toc-box a { text-decoration: none; }
-#toc-box a:hover { text-decoration: underline; }
 
-/* 避免目录与正文、右侧元素贴太近（可按需微调） */
-@media (min-width: 992px) {
-  .edu-list { max-width: 760px; }
+#toc-box ul {
+list-style-type: none !important;
+margin: 0;
+padding-left: 0;
+}
+#toc-box li::marker {
+content: none !important;
+}
+
+/* 美化目录内容 */
+#toc-box ul { list-style: none; margin: 0; padding: 0; }
+#toc-box li { margin: .25rem 0; }
+#toc-box a { text-decoration: none; color: #333; }
+#toc-box a:hover { color: #002FA7; text-decoration: underline; }
+
+/* 小屏幕自动隐藏目录（防止遮挡） */
+@media (max-width: 992px) {
+#toc-box { display: none; }
 }
