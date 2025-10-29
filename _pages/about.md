@@ -68,7 +68,7 @@ Let's expore the world!
     <div class="edu-bullet">•</div>
     <img class="edu-logo" src="/images/zjzj_logo.png" alt="Zhejiang Zhuji Middle School">
     <div>
-      <strong>High School Student<br>
+      <strong>High School Student</strong><br>
       Zhejiang Zhuji Middle School<br>
       <small>2015–2018</small>
     </div>
