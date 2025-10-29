@@ -14,11 +14,8 @@ redirect_from:
 {:toc}
 </div>
 
-
-
 <!-- # 👋 **Hello, everyone!** -->
 <span style="font-size:1.6em; font-weight:bold;">👋 Hello, everyone!</span>
-
 
 I am a fourth-year Ph.D. student in Fluid Mechanics at Peking University.
 Previously, I received my bachelor’s degree in Aerocraft Design and Engineering from Northwestern Polytechnical University.
@@ -34,7 +31,6 @@ $$
 Let's expore the world!
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=100&color=002FA7&width=435&lines=print+*%2C+%22Hello+World!%22;git+commit+-m+%22c'est+la+vie%22" alt="Typing SVG" /></a>
-
 
 ### 📰 **News**
 
@@ -111,7 +107,6 @@ Let's expore the world!
           async></script>
 </div>
 {% endraw %}
-
 
 <!-- ----------------------------------------------------------------------- -->
 <!-- time -->
