@@ -34,14 +34,10 @@ Let's expore the world!
 
 ### 📰 **News**
 
-- **Aug 2025** — Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland
-- **Jul 2025** — Oral presentation at *Chinese Congress of Theoretical and Applied Mechanics - 2025*, Changsha, China
-- **Aug 2024** — Oral presentation at *13th National Conference on Fluid Mechanics*, Harbin, China
-- **Jun 2024** — Oral presentation at *19th OpenFOAM Workshop*, Beijing, China  
-
----
-
-### 🛠️ **Projects**
+- **2025/08** - Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland
+- **2025/07** - Oral presentation at *Chinese Congress of Theoretical and Applied Mechanics - 2025*, Changsha, China
+- **2024/08** - Oral presentation at *13th National Conference on Fluid Mechanics*, Harbin, China
+- **2024/06** - Oral presentation at *19th OpenFOAM Workshop*, Beijing, China  
 
 ---
 
@@ -83,18 +79,24 @@ Let's expore the world!
 
 ### 📘 **Teaching**
 
-- **Spring 2024** — *Teaching Assistant*, **Computational Fluid Mechanics**, College of Engineering, Peking University
+- **Spring 2024** - *Teaching Assistant*, **Computational Fluid Mechanics**, College of Engineering, Peking University
+
+---
+
+### 🛠️ **Experience**
+
+- **2022/07-2022/08** - Assistant Engineer, Peking University Nanchang Innovation Institute 
 
 ---
 
 ### 🏆 **Awards**
 
-- **2022** — Excellent Graduate, NPU
-- **2021** — National Scholarship, NPU
-- **2021** — Finalist, Mathematical Contest in Modeling (MCM)
-- **2020** — First-Class Special Scholarship of Aviation Industry Corporation of China (AVIC), NPU
-- **2020** — Team First Prize, 2020 China International Aircraft Design Challenge (CADC)
-- **2019** — Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship, NPU
+- **2022** - Excellent Graduate, NPU
+- **2021** - National Scholarship, NPU
+- **2021** - Finalist, Mathematical Contest in Modeling (MCM)
+- **2020** - First-Class Scholarship from Aviation Industry Corporation of China (AVIC), NPU
+- **2020** - Team First Prize, 2020 China International Aircraft Design Challenge (CADC)
+- **2019** - Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship, NPU
 
 ---
 
