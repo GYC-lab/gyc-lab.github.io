@@ -92,7 +92,7 @@ Let's expore the world!
 - **2022** — Excellent Graduate, NPU
 - **2021** — National Scholarship, NPU
 - **2021** — Finalist, Mathematical Contest in Modeling (MCM)
-- **2020** — First-class Special Scholarship, Aviation Industry Corporation of China (AVIC), NPU
+- **2020** — First-class Special Scholarship of Aviation Industry Corporation of China (AVIC), NPU
 - **2020** — Team First Prize, 2020 China International Aircraft Design Challenge (CADC)
 - **2019** — Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship, NPU
 
