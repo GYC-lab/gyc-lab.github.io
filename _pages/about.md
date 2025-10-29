@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <div id="toc-box" markdown="1">
-<p class="toc-title"><strong>Table of Contents</strong></p>
+<p class="toc-title"><strong>TABLE OF CONTENTS</strong></p>
 * TOC
 {:toc}
 </div>
