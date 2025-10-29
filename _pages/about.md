@@ -91,7 +91,7 @@ Let's expore the world!
 
 ### 🏆 **Awards**
 
-- **2022** - Excellent Graduate, NPU
+- **2022** - Outstanding Graduate, NPU
 - **2021** - National Scholarship, NPU
 - **2021** - Finalist, Mathematical Contest in Modeling (MCM)
 - **2020** - First-Class Scholarship from Aviation Industry Corporation of China (AVIC), NPU
