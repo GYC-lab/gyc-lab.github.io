@@ -85,7 +85,7 @@ Let's expore the world!
 
 ### 🛠️ **Experience**
 
-- **2022/07-2022/08** - Assistant Engineer, Peking University Nanchang Innovation Institute 
+- **2022/07-2022/08** - *Assistant Engineer*, Peking University Nanchang Innovation Institute 
 
 ---
 
