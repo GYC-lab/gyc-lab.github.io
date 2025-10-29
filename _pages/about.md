@@ -49,7 +49,7 @@ Let's expore the world!
     <img class="edu-logo" src="/images/pku_logo.png" alt="Peking University">
     <div>
       <strong>Ph.D. Student</strong>, Fluid Mechanics<br>
-      Peking University<br>
+      Peking University, School of Mechanics and Engineering Science<br>
       <small>2022–Present</small>
     </div>
   </div>
@@ -59,7 +59,7 @@ Let's expore the world!
     <img class="edu-logo" src="/images/nwpu_logo.png" alt="Northwestern Polytechnical University">
     <div>
       <strong>Bachelor of Engineering</strong>, Aerocraft Design and Engineering<br>
-      Northwestern Polytechnical University<br>
+      Northwestern Polytechnical University, School of Aeronautics<br>
       <small>2018–2022</small>
     </div>
   </div>
@@ -68,7 +68,7 @@ Let's expore the world!
     <div class="edu-bullet">•</div>
     <img class="edu-logo" src="/images/zjzj_logo.png" alt="Zhejiang Zhuji Middle School">
     <div>
-      <strong>High School Diploma</strong>, General Education<br>
+      <strong>High School Student<br>
       Zhejiang Zhuji Middle School<br>
       <small>2015–2018</small>
     </div>
