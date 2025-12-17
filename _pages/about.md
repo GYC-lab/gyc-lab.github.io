@@ -17,7 +17,7 @@ redirect_from:
 <!-- # 👋 **Hello, everyone!** -->
 <span style="font-size:1.6em; font-weight:bold;">👋 Hello, everyone!</span>
 
-I am a fourth-year Ph.D. student in Fluid Mechanics at Peking University.
+I am a Ph.D. student in Fluid Mechanics at Peking University.
 Previously, I received my bachelor’s degree in Aerocraft Design and Engineering from Northwestern Polytechnical University.
 
 My research focuses on Computational Fluid Mechanics (CFD), particularly in turbulence synthesis and modeling in wall-bounded flows.
