@@ -10,16 +10,16 @@ checking for cpuid.h... yes
 creating Makefile
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/json-2.19.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20260320-2063-r5gq0u sitelibdir\=./.gem.20260320-2063-r5gq0u clean
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-dijw6p sitelibdir\=./.gem.20260320-5140-dijw6p clean
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/json-2.19.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20260320-2063-r5gq0u sitelibdir\=./.gem.20260320-2063-r5gq0u
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-dijw6p sitelibdir\=./.gem.20260320-5140-dijw6p
 compiling parser.c
 linking shared-object json/ext/parser.so
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/json-2.19.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20260320-2063-r5gq0u sitelibdir\=./.gem.20260320-2063-r5gq0u install
-/usr/bin/install -c -m 0755 parser.so ./.gem.20260320-2063-r5gq0u/json/ext
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-dijw6p sitelibdir\=./.gem.20260320-5140-dijw6p install
+/usr/bin/install -c -m 0755 parser.so ./.gem.20260320-5140-dijw6p/json/ext
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/json-2.19.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20260320-2063-r5gq0u sitelibdir\=./.gem.20260320-2063-r5gq0u clean
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-dijw6p sitelibdir\=./.gem.20260320-5140-dijw6p clean

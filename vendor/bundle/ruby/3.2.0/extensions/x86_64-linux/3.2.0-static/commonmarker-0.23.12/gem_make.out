@@ -4,10 +4,10 @@ checking for whether -std=c99 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/commonmarker-0.23.12/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20251023-9596-rjmyvd sitelibdir\=./.gem.20251023-9596-rjmyvd clean
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-cikg08 sitelibdir\=./.gem.20260320-5140-cikg08 clean
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/commonmarker-0.23.12/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20251023-9596-rjmyvd sitelibdir\=./.gem.20251023-9596-rjmyvd
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-cikg08 sitelibdir\=./.gem.20260320-5140-cikg08
 compiling arena.c
 compiling autolink.c
 compiling blocks.c
@@ -80,8 +80,8 @@ compiling xml.c
 linking shared-object commonmarker/commonmarker.so
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/commonmarker-0.23.12/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20251023-9596-rjmyvd sitelibdir\=./.gem.20251023-9596-rjmyvd install
-/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20251023-9596-rjmyvd/commonmarker
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-cikg08 sitelibdir\=./.gem.20260320-5140-cikg08 install
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20260320-5140-cikg08/commonmarker
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/commonmarker-0.23.12/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20251023-9596-rjmyvd sitelibdir\=./.gem.20251023-9596-rjmyvd clean
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-cikg08 sitelibdir\=./.gem.20260320-5140-cikg08 clean

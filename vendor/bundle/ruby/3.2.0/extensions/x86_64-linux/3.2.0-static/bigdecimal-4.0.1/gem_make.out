@@ -22,17 +22,17 @@ checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
 creating Makefile
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260320-2063-5l8axp sitelibdir\=./.gem.20260320-2063-5l8axp clean
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-v966xy sitelibdir\=./.gem.20260320-5140-v966xy clean
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260320-2063-5l8axp sitelibdir\=./.gem.20260320-2063-5l8axp
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-v966xy sitelibdir\=./.gem.20260320-5140-v966xy
 compiling bigdecimal.c
 compiling missing.c
 linking shared-object bigdecimal.so
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260320-2063-5l8axp sitelibdir\=./.gem.20260320-2063-5l8axp install
-/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20260320-2063-5l8axp
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-v966xy sitelibdir\=./.gem.20260320-5140-v966xy install
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20260320-5140-v966xy
 
 current directory: /home/ycge/sites/gyc-lab.github.io/vendor/bundle/ruby/3.2.0/gems/bigdecimal-4.0.1/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20260320-2063-5l8axp sitelibdir\=./.gem.20260320-2063-5l8axp clean
+make DESTDIR\= sitearchdir\=./.gem.20260320-5140-v966xy sitelibdir\=./.gem.20260320-5140-v966xy clean
