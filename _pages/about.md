@@ -20,7 +20,7 @@ redirect_from:
 I am a Ph.D. student in Fluid Mechanics at Peking University.
 Previously, I received my bachelor’s degree in Aerocraft Design and Engineering from Northwestern Polytechnical University.
 
-My research focuses on Computational Fluid Mechanics (CFD), particularly in turbulence synthesis and modeling in wall-bounded flows.
+My research lies in computational fluid dynamics (CFD), centering on turbulence synthesis and modeling for wall-bounded flows, where vortex structures serve as the fundamental building blocks. My interests also extend to turbomachinery aerodynamics, with a focus on the effects of surface roughness on aerodynamic performance.
 
 $$
 \frac{\partial \boldsymbol{u}}
