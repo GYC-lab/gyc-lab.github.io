@@ -26,7 +26,7 @@ author_profile: true
 - **Y. Ge**, Y. Zhao\*, Turbulence Modelling for Rough-Wall Turbine Flows, *Aerospace Power*, 2024(02): 49--53 [<a href="https://kns.cnki.net/kcms2/article/abstract?v=o8vMLOX1CKu3yWDkVmftidHRkIVaMIXl2zCErKQ1aq9V2Gbd8qUs1bK0vcBAQeral8QXr49st10yoe_49s9KzinoIdVLqVyVd8J16oJopS2xaXFZ7vrXAlZRiNRkXK-7CxDUny83X1W75e60uia88Q3Z4v5Sc5DwrFLj-cMoirXZvLFzi5LFdA==&uniplatform=NZKPT&language=CHS" target="_blank">paper</a>]
 
 <p style="text-align: center;">
-  <img src="{{ '/images/roughLPT.jpg' | relative_url }}" alt="SWAT" style="width: 40%; max-width: 600px; height: auto;">
+  <img src="{{ '/images/roughLPT.jpg' | relative_url }}" alt="SWAT" style="width: 32%; max-width: 600px; height: auto;">
 </p>
 
 <!-- - 葛宇辰，赵耀民. 粗糙壁面涡轮内流湍流模型[J]. 航空动力，2024(02): 49-53 [<a href="https://kns.cnki.net/kcms2/article/abstract?v=o8vMLOX1CKu3yWDkVmftidHRkIVaMIXl2zCErKQ1aq9V2Gbd8qUs1bK0vcBAQeral8QXr49st10yoe_49s9KzinoIdVLqVyVd8J16oJopS2xaXFZ7vrXAlZRiNRkXK-7CxDUny83X1W75e60uia88Q3Z4v5Sc5DwrFLj-cMoirXZvLFzi5LFdA==&uniplatform=NZKPT&language=CHS" target="_blank">paper</a>] -->
