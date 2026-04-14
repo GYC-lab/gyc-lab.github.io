@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-- W. Shen, **Y. Ge (co-first)**, Z. Han, Y. Zhao\* and Y. Yang\*, Constructing wall turbulence using hierarchical hairpin vortices, *Physical Review Fluids*, 11, 044604, 2026. [<a href="https://doi.org/10.1103/q3gt-v8jm" target="_blank">doi</a>]
+- W. Shen, **Y. Ge (co-first)**, Z. Han, Y. Zhao\* and Y. Yang\*, Constructing wall turbulence using hierarchical hairpin vortices, *Physical Review Fluids*, 11, 044604, 2026. [<a href="https://doi.org/10.1103/q3gt-v8jm" target="_blank">paper</a>]
 
 
 <p style="text-align: center;">
