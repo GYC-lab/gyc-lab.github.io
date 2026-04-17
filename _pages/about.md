@@ -79,7 +79,7 @@ Let's expore the world!
 
 ### 📘 **Teaching**
 
-- **Spring 2024** - *Teaching Assistant*, **Computational Fluid Mechanics**, College of Engineering, Peking University
+- **Spring 2024** - *Teaching Assistant*, Computational Fluid Mechanics, College of Engineering, Peking University
 
 ---
 
