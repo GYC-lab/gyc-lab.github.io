@@ -22,11 +22,11 @@ Previously, I received my bachelor’s degree in Aerocraft Design and Engineerin
 
 My research lies in computational fluid dynamics (CFD), centering on turbulence synthesis and modeling for wall-bounded flows, where vortex structures serve as the fundamental building blocks. My interests also extend to turbomachinery aerodynamics, with a focus on the effects of surface roughness on aerodynamic performance.
 
-$$
+\begin{equation*}
 \frac{\partial \boldsymbol{u}}
   {\partial t}  + 
   \boldsymbol{u} \cdot   \nabla \boldsymbol{u} = - \frac{1}{\rho } \nabla  p + \nu \nabla ^2 \boldsymbol{u} + \boldsymbol{f}
-$$
+\end{equation*}
 
 Let's expore the world! 
 
