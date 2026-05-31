@@ -209,6 +209,22 @@
         background: rgba(255, 255, 255, 0.14);
       }
 
+      .progress-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .time-label {
+        color: var(--ink);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+
       .progress span {
         display: block;
         width: 0%;
@@ -458,15 +474,19 @@
           <div class="player" aria-label="歌曲播放器">
             <div class="track">
               <span class="track-label">TFBOYS《萤火》</span>
-              <span class="track-status" id="trackStatus">准备播放</span>
+              <span class="track-status" id="trackStatus">准备自动播放</span>
             </div>
-            <div class="progress" aria-hidden="true">
+            <div class="progress" id="progressBar" role="progressbar" aria-label="播放进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
               <span id="progressFill"></span>
+            </div>
+            <div class="progress-meta">
+              <span>播放进度</span>
+              <span class="time-label" id="timeLabel">00:00 / 00:00</span>
             </div>
             <div class="lyrics-panel" aria-label="完整歌词展示区">
               <h2>歌词</h2>
               <pre id="lyricsText">请添加授权歌词文件 lyrics.txt 或 lyrics.lrc</pre>
-            </div><audio id="audio" preload="metadata" src="/assets/firefly-gift/yinghuo.mp3"></audio>
+            </div><audio id="audio" preload="auto" autoplay playsinline src="/assets/firefly-gift/yinghuo.mp3"></audio>
           </div>
 
           <div class="actions">
@@ -571,9 +591,12 @@
       const playLabel = document.querySelector("#playLabel");
       const playIcon = document.querySelector("#playIcon");
       const trackStatus = document.querySelector("#trackStatus");
+      const progressBar = document.querySelector("#progressBar");
       const progressFill = document.querySelector("#progressFill");
+      const timeLabel = document.querySelector("#timeLabel");
       const lyricsText = document.querySelector("#lyricsText");
       const songLink = document.querySelector("#songLink").href;
+      let autoplayAttempted = false;
 
       function applyState() {
         recipient.textContent = state.to;
@@ -619,6 +642,57 @@
         showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 2100);
       }
 
+      function formatTime(value) {
+        if (!Number.isFinite(value) || value <= 0) return "00:00";
+        const totalSeconds = Math.floor(value);
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = String(totalSeconds % 60).padStart(2, "0");
+        return `${minutes}:${seconds}`;
+      }
+
+      function updateProgress() {
+        const current = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+        const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+        const percent = duration > 0 ? Math.min((current / duration) * 100, 100) : 0;
+        progressFill.style.width = `${percent}%`;
+        progressBar.setAttribute("aria-valuenow", String(Math.round(percent)));
+        timeLabel.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
+      }
+
+      function setPlayButton(isPlaying) {
+        playLabel.textContent = isPlaying ? "暂停" : "播放";
+        playIcon.setAttribute(
+          "d",
+          isPlaying ? "M7 5h4v14H7V5Zm6 0h4v14h-4V5Z" : "M8 5v14l11-7-11-7Z",
+        );
+      }
+
+      async function startAudio(isAutoplay = false) {
+        if (audio.error) {
+          trackStatus.textContent = "等待音频文件";
+          showToast("把音频文件放到 assets/firefly-gift/yinghuo.mp3 后即可直接播放");
+          return false;
+        }
+
+        try {
+          await audio.play();
+          return true;
+        } catch (error) {
+          setPlayButton(false);
+          const blocked = error && error.name === "NotAllowedError";
+          trackStatus.textContent = blocked || isAutoplay ? "点一下继续播放" : "音频暂时无法播放";
+          showToast(blocked || isAutoplay ? "浏览器限制自动播放，点一下播放即可" : "当前浏览器没有加载到音频文件");
+          return false;
+        }
+      }
+
+      function attemptAutoplay() {
+        if (autoplayAttempted) return;
+        autoplayAttempted = true;
+        trackStatus.textContent = "自动播放中";
+        startAudio(true);
+      }
+
       function stripLrcTimestamps(text) {
         return text
           .split(/\r?\n/)
@@ -656,51 +730,49 @@
       });
 
       playBtn.addEventListener("click", async () => {
-        if (audio.error) {
-          showToast("把音频文件放到 assets/firefly-gift/yinghuo.mp3 后即可直接播放");
-          return;
-        }
-
         if (audio.paused) {
-          try {
-            await audio.play();
-          } catch {
-            showToast("当前浏览器没有加载到音频文件");
-          }
+          if (audio.ended) audio.currentTime = 0;
+          await startAudio(false);
         } else {
           audio.pause();
         }
       });
 
       audio.addEventListener("loadedmetadata", () => {
-        trackStatus.textContent = "点击播放片段";
+        updateProgress();
+        trackStatus.textContent = audio.paused ? "准备自动播放" : "正在播放";
       });
 
+      audio.addEventListener("durationchange", updateProgress);
+
       audio.addEventListener("play", () => {
-        playLabel.textContent = "暂停";
-        playIcon.setAttribute("d", "M7 5h4v14H7V5Zm6 0h4v14h-4V5Z");
+        setPlayButton(true);
         trackStatus.textContent = "正在播放";
+        updateProgress();
       });
 
       audio.addEventListener("pause", () => {
-        playLabel.textContent = "播放";
-        playIcon.setAttribute("d", "M8 5v14l11-7-11-7Z");
-        trackStatus.textContent = audio.currentTime > 0 ? "已暂停" : "点击播放片段";
+        if (audio.ended) return;
+        setPlayButton(false);
+        trackStatus.textContent = audio.currentTime > 0 ? "已暂停" : "点一下继续播放";
+        updateProgress();
       });
 
-      audio.addEventListener("timeupdate", () => {
-        if (!audio.duration) return;
-        progressFill.style.width = `${Math.min((audio.currentTime / audio.duration) * 100, 100)}%`;
-      });
+      audio.addEventListener("timeupdate", updateProgress);
 
       audio.addEventListener("ended", () => {
-        progressFill.style.width = "0%";
+        setPlayButton(false);
+        updateProgress();
         trackStatus.textContent = "播放完成";
       });
 
       audio.addEventListener("error", () => {
         trackStatus.textContent = "等待音频文件";
+        updateProgress();
       });
+
+      audio.addEventListener("canplay", attemptAutoplay, { once: true });
+      window.addEventListener("load", attemptAutoplay, { once: true });
 
       document.querySelector("#shareBtn").addEventListener("click", async () => {
         const shareData = {
@@ -744,6 +816,8 @@
       });
       loadLyrics();
       applyState();
+      updateProgress();
+      attemptAutoplay();
     </script>
   </body>
 </html>
