@@ -190,6 +190,64 @@ sitemap: false
         transition: width 120ms linear;
       }
 
+      .subtitle-marquee {
+        position: relative;
+        height: 30px;
+        margin-top: 12px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(6, 25, 35, 0.42);
+        color: rgba(247, 239, 224, 0.88);
+        font-size: 14px;
+        line-height: 30px;
+        white-space: nowrap;
+      }
+
+      .subtitle-marquee::before,
+      .subtitle-marquee::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 34px;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .subtitle-marquee::before {
+        left: 0;
+        background: linear-gradient(90deg, rgba(6, 25, 35, 0.92), transparent);
+      }
+
+      .subtitle-marquee::after {
+        right: 0;
+        background: linear-gradient(270deg, rgba(6, 25, 35, 0.92), transparent);
+      }
+
+      .subtitle-marquee span {
+        display: inline-block;
+        min-width: max-content;
+        padding-left: 100%;
+        animation: subtitle-scroll 17s linear infinite;
+      }
+
+      @keyframes subtitle-scroll {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .subtitle-marquee span {
+          padding-left: 12px;
+          animation: none;
+        }
+      }
+
       .actions {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -394,6 +452,9 @@ sitemap: false
             </div>
             <div class="progress" aria-hidden="true">
               <span id="progressFill"></span>
+            </div>
+            <div class="subtitle-marquee" aria-label="滚动字幕">
+              <span>六一儿童节快乐 · 送你一首《萤火》 · 愿你一直有光</span>
             </div>
             <audio id="audio" preload="metadata" src="/assets/firefly-gift/yinghuo.mp3"></audio>
           </div>
