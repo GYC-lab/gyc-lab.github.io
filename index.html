@@ -149,7 +149,7 @@
       }
 
       .gift {
-        width: min(100% - 28px, 760px);
+        width: min(100% - 24px, 920px);
         margin: 0 auto clamp(16px, 4vw, 34px);
         padding: clamp(18px, 4vw, 30px);
         border: 1px solid var(--line);
@@ -175,7 +175,7 @@
 
       .player {
         margin: 0 0 18px;
-        padding: 14px;
+        padding: 16px;
         border: 1px solid rgba(118, 209, 201, 0.26);
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.06);
@@ -220,8 +220,9 @@
 
       .lyrics-panel {
         margin-top: 12px;
-        padding: 14px;
-        max-height: 220px;
+        padding: 16px;
+        min-height: clamp(320px, 38vh, 520px);
+        max-height: clamp(420px, 48vh, 700px);
         overflow: auto;
         border: 1px solid rgba(247, 239, 224, 0.14);
         border-radius: 8px;
@@ -239,8 +240,8 @@
         margin: 0;
         color: rgba(247, 239, 224, 0.88);
         font: inherit;
-        font-size: 14px;
-        line-height: 1.8;
+        font-size: clamp(15px, 1.8vw, 17px);
+        line-height: 1.9;
         white-space: pre-wrap;
       }
 
@@ -407,7 +408,7 @@
 
       @media (max-width: 680px) {
         .shell {
-          grid-template-rows: minmax(380px, 1fr) auto;
+          grid-template-rows: minmax(330px, 0.82fr) auto;
         }
 
         .hero {
@@ -416,6 +417,11 @@
 
         .actions {
           grid-template-columns: 1fr 1fr;
+        }
+
+        .lyrics-panel {
+          min-height: 300px;
+          max-height: 52vh;
         }
 
         .action {
