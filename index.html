@@ -52,19 +52,52 @@
         position: relative;
         min-height: 100vh;
         overflow: hidden;
-        background:
-          linear-gradient(180deg, rgba(3, 14, 21, 0.2) 0%, rgba(3, 14, 21, 0.78) 64%, rgba(3, 14, 21, 0.95) 100%),
-          url("/assets/firefly-gift/firefly-night.png") center / cover no-repeat;
+        background: var(--deep);
       }
 
+      .page::before,
       .page::after {
         content: "";
         position: fixed;
-        inset: 0;
         pointer-events: none;
+      }
+
+      .page::before {
+        inset: -8%;
+        z-index: 0;
+        background: url("/assets/firefly-gift/firefly-night.png") center / cover no-repeat;
+        transform: translate3d(-1.5%, -2%, 0) scale(1.06);
+        animation: background-drift 30s ease-in-out infinite alternate;
+        will-change: transform;
+      }
+
+      .page::after {
+        inset: 0;
+        z-index: 0;
         background:
           radial-gradient(circle at 48% 68%, rgba(255, 183, 70, 0.2), transparent 28%),
+          linear-gradient(180deg, rgba(3, 14, 21, 0.2) 0%, rgba(3, 14, 21, 0.78) 64%, rgba(3, 14, 21, 0.95) 100%),
           linear-gradient(90deg, rgba(1, 8, 12, 0.34), transparent 24%, transparent 76%, rgba(1, 8, 12, 0.32));
+      }
+
+      @keyframes background-drift {
+        0% {
+          transform: translate3d(-1.5%, -2%, 0) scale(1.06);
+        }
+
+        50% {
+          transform: translate3d(1.5%, 0.5%, 0) scale(1.1);
+        }
+
+        100% {
+          transform: translate3d(0, -5%, 0) scale(1.06);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .page::before {
+          animation: none;
+        }
       }
 
       .shell {
