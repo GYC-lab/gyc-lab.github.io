@@ -374,7 +374,7 @@ sitemap: false
     <main class="page">
       <div class="shell">
         <section class="hero" aria-label="送歌开场">
-          <p class="kicker" id="recipient">给喜欢 TFBOYS 的你</p>
+          <p class="kicker" id="recipient">六一儿童节快乐</p>
           <h1>萤火</h1>
           <p class="subtitle">
             有些歌像夜里的小光，不吵也不远，刚好陪人想起童年、朋友和慢慢长大的自己。
@@ -475,7 +475,7 @@ sitemap: false
 
     <script>
       const defaults = {
-        to: "喜欢 TFBOYS 的你",
+        to: "六一儿童节快乐",
         from: "一个想把好歌分享给你的人",
         msg: "把这首歌送给你。愿你听见它的时候，心里还有一盏很亮、很温柔的小灯。",
       };
@@ -504,7 +504,7 @@ sitemap: false
       const songLink = document.querySelector("#songLink").href;
 
       function applyState() {
-        recipient.textContent = `给${state.to}`;
+        recipient.textContent = state.to;
         message.textContent = state.msg;
         signature.textContent = `来自：${state.from}`;
         toInput.value = state.to;
