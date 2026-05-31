@@ -80,6 +80,128 @@
           linear-gradient(90deg, rgba(1, 8, 12, 0.34), transparent 24%, transparent 76%, rgba(1, 8, 12, 0.32));
       }
 
+      .bubbles {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        overflow: hidden;
+        pointer-events: none;
+      }
+
+      .bubble {
+        position: absolute;
+        bottom: -14vh;
+        left: var(--left);
+        width: var(--size);
+        aspect-ratio: 1;
+        border: 1px solid rgba(255, 230, 164, 0.42);
+        border-radius: 50%;
+        background: rgba(118, 209, 201, 0.08);
+        box-shadow:
+          inset 0 0 14px rgba(255, 255, 255, 0.18),
+          0 0 18px rgba(255, 209, 106, 0.18);
+        opacity: 0;
+        transform: translate3d(0, 0, 0) scale(0.8);
+        animation: float-bubble var(--duration) linear infinite;
+        animation-delay: var(--delay);
+        will-change: transform, opacity;
+      }
+
+      .bubble::after {
+        content: "";
+        position: absolute;
+        top: 22%;
+        left: 26%;
+        width: 24%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.48);
+      }
+
+      .bubble:nth-child(1) {
+        --left: 6%;
+        --size: 18px;
+        --duration: 18s;
+        --delay: -2s;
+      }
+
+      .bubble:nth-child(2) {
+        --left: 14%;
+        --size: 34px;
+        --duration: 24s;
+        --delay: -12s;
+      }
+
+      .bubble:nth-child(3) {
+        --left: 23%;
+        --size: 24px;
+        --duration: 20s;
+        --delay: -7s;
+      }
+
+      .bubble:nth-child(4) {
+        --left: 31%;
+        --size: 46px;
+        --duration: 29s;
+        --delay: -16s;
+      }
+
+      .bubble:nth-child(5) {
+        --left: 42%;
+        --size: 20px;
+        --duration: 17s;
+        --delay: -4s;
+      }
+
+      .bubble:nth-child(6) {
+        --left: 51%;
+        --size: 38px;
+        --duration: 26s;
+        --delay: -18s;
+      }
+
+      .bubble:nth-child(7) {
+        --left: 61%;
+        --size: 16px;
+        --duration: 16s;
+        --delay: -10s;
+      }
+
+      .bubble:nth-child(8) {
+        --left: 69%;
+        --size: 52px;
+        --duration: 31s;
+        --delay: -21s;
+      }
+
+      .bubble:nth-child(9) {
+        --left: 78%;
+        --size: 28px;
+        --duration: 22s;
+        --delay: -6s;
+      }
+
+      .bubble:nth-child(10) {
+        --left: 88%;
+        --size: 40px;
+        --duration: 27s;
+        --delay: -14s;
+      }
+
+      .bubble:nth-child(11) {
+        --left: 94%;
+        --size: 22px;
+        --duration: 19s;
+        --delay: -8s;
+      }
+
+      .bubble:nth-child(12) {
+        --left: 36%;
+        --size: 14px;
+        --duration: 15s;
+        --delay: -1s;
+      }
+
       @keyframes background-drift {
         0% {
           transform: translate3d(-1.5%, -2%, 0) scale(1.06);
@@ -94,15 +216,43 @@
         }
       }
 
+      @keyframes float-bubble {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 0, 0) scale(0.72);
+        }
+
+        12% {
+          opacity: 0.58;
+        }
+
+        50% {
+          transform: translate3d(24px, -54vh, 0) scale(1);
+        }
+
+        88% {
+          opacity: 0.48;
+        }
+
+        100% {
+          opacity: 0;
+          transform: translate3d(-18px, -112vh, 0) scale(1.16);
+        }
+      }
+
       @media (prefers-reduced-motion: reduce) {
         .page::before {
           animation: none;
+        }
+
+        .bubbles {
+          display: none;
         }
       }
 
       .shell {
         position: relative;
-        z-index: 1;
+        z-index: 2;
         display: grid;
         min-height: 100vh;
         grid-template-rows: minmax(430px, 1fr) auto;
@@ -456,6 +606,20 @@
   </head>
   <body>
     <main class="page">
+      <div class="bubbles" aria-hidden="true">
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+      </div>
       <div class="shell">
         <section class="hero" aria-label="儿童节祝福开场">
           <p class="kicker" id="recipient">儿童节小礼物</p>
