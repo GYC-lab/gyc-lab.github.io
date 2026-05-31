@@ -11,9 +11,9 @@ sitemap: false
     <meta name="theme-color" content="#061923" />
     <meta
       name="description"
-      content="一张可以分享的《萤火》送歌小卡，送给喜欢 TFBOYS 的朋友。"
+      content="一张六一儿童节快乐主题小卡，把 TFBOYS《萤火》作为音乐礼物。"
     />
-    <title>送你一首《萤火》</title>
+    <title>六一儿童节快乐</title>
     <style>
       :root {
         color-scheme: dark;
@@ -464,17 +464,17 @@ sitemap: false
   <body>
     <main class="page">
       <div class="shell">
-        <section class="hero" aria-label="送歌开场">
-          <p class="kicker" id="recipient">六一儿童节快乐</p>
-          <h1>萤火</h1>
+        <section class="hero" aria-label="儿童节祝福开场">
+          <p class="kicker" id="recipient">儿童节小礼物</p>
+          <h1>六一儿童节快乐</h1>
           <p class="subtitle">
-            有些歌像夜里的小光，不吵也不远，刚好陪人想起童年、朋友和慢慢长大的自己。
+            愿今天的你，像小时候一样明亮、自在、好奇。这首《萤火》，只是给这份祝福点亮的一束小光。
           </p>
         </section>
 
-        <section class="gift" aria-label="送歌内容">
+        <section class="gift" aria-label="儿童节音乐礼物">
           <p class="message" id="message">
-            把这首歌送给你。愿你听见它的时候，心里还有一盏很亮、很温柔的小灯。
+            儿童节快乐。愿你一直保留孩子般的单纯、勇敢和发光的心。
           </p>
           <p class="signature" id="signature">来自：一个想把好歌分享给你的人</p>
 
@@ -569,9 +569,9 @@ sitemap: false
 
     <script>
       const defaults = {
-        to: "六一儿童节快乐",
+        to: "儿童节小礼物",
         from: "一个想把好歌分享给你的人",
-        msg: "把这首歌送给你。愿你听见它的时候，心里还有一盏很亮、很温柔的小灯。",
+        msg: "儿童节快乐。愿你一直保留孩子般的单纯、勇敢和发光的心。",
       };
 
       const params = new URLSearchParams(window.location.search);
@@ -748,8 +748,8 @@ sitemap: false
 
       document.querySelector("#shareBtn").addEventListener("click", async () => {
         const shareData = {
-          title: "送你一首《萤火》",
-          text: `送你一首 TFBOYS 的《萤火》：${state.msg}`,
+          title: "六一儿童节快乐",
+          text: `六一儿童节快乐：${state.msg}`,
           url: currentUrl(),
         };
         if (navigator.share) {
