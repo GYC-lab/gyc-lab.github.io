@@ -1,4 +1,10 @@
 ﻿Firefly temporary homepage backup
 Created: 20260531_194657
 Original homepage: _pages/about.md
-Restore: copy _pages/about.md from this backup directory back to repo _pages/about.md, then remove assets/firefly-gift if desired.
+Temporary homepage file: _pages/about.html
+
+Restore steps:
+1. Copy _firefly_backup_20260531_194657/_pages/about.md back to _pages/about.md.
+2. Remove _pages/about.html.
+3. Remove assets/firefly-gift if you no longer need the temporary page assets.
+4. Commit and push the restore change.
