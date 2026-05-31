@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#061923" />
+    <meta name="theme-color" content="#fff6d8" />
     <meta
       name="description"
       content="一张六一儿童节快乐主题小卡，把 TFBOYS《萤火》作为音乐礼物。"
@@ -11,17 +11,20 @@
     <title>六一儿童节快乐</title>
     <style>
       :root {
-        color-scheme: dark;
-        --ink: #f7efe0;
-        --muted: rgba(247, 239, 224, 0.74);
-        --soft: rgba(247, 239, 224, 0.11);
-        --line: rgba(247, 239, 224, 0.18);
-        --gold: #ffd16a;
-        --gold-strong: #ffad3d;
-        --sea: #76d1c9;
-        --deep: #061923;
-        --night: #0a2636;
-        --shadow: rgba(0, 0, 0, 0.42);
+        color-scheme: light;
+        --ink: #26384f;
+        --muted: rgba(38, 56, 79, 0.68);
+        --soft: rgba(255, 255, 255, 0.68);
+        --line: rgba(73, 110, 143, 0.22);
+        --gold: #ffbe45;
+        --gold-strong: #ff8f66;
+        --sea: #42bdb3;
+        --deep: #fff8df;
+        --night: #dff7ff;
+        --pink: #ff8fb8;
+        --blue: #6cc8ff;
+        --green: #8edb75;
+        --shadow: rgba(86, 113, 142, 0.2);
       }
 
       * {
@@ -52,7 +55,8 @@
         position: relative;
         min-height: 100vh;
         overflow: hidden;
-        background: var(--deep);
+        background:
+          linear-gradient(180deg, #fff9df 0%, #dbf7ff 52%, #fff2f7 100%);
       }
 
       .page::before,
@@ -65,9 +69,13 @@
       .page::before {
         inset: -8%;
         z-index: 0;
-        background: url("/assets/firefly-gift/firefly-night.png") center / cover no-repeat;
-        transform: translate3d(-1.5%, -2%, 0) scale(1.06);
-        animation: background-drift 30s ease-in-out infinite alternate;
+        background:
+          radial-gradient(circle at 18% 18%, rgba(255, 210, 95, 0.46), transparent 24%),
+          radial-gradient(circle at 74% 12%, rgba(114, 202, 255, 0.5), transparent 27%),
+          radial-gradient(circle at 82% 68%, rgba(255, 143, 184, 0.38), transparent 28%),
+          radial-gradient(circle at 18% 78%, rgba(126, 219, 117, 0.3), transparent 25%);
+        transform: translate3d(-1%, -1%, 0) scale(1.06);
+        animation: background-drift 28s ease-in-out infinite alternate;
         will-change: transform;
       }
 
@@ -75,9 +83,8 @@
         inset: 0;
         z-index: 0;
         background:
-          radial-gradient(circle at 48% 68%, rgba(255, 183, 70, 0.2), transparent 28%),
-          linear-gradient(180deg, rgba(3, 14, 21, 0.2) 0%, rgba(3, 14, 21, 0.78) 64%, rgba(3, 14, 21, 0.95) 100%),
-          linear-gradient(90deg, rgba(1, 8, 12, 0.34), transparent 24%, transparent 76%, rgba(1, 8, 12, 0.32));
+          linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.5) 54%, rgba(255, 249, 230, 0.76) 100%),
+          repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0 2px, transparent 2px 18px);
       }
 
       .bubbles {
@@ -90,20 +97,24 @@
 
       .bubble {
         position: absolute;
-        bottom: -14vh;
+        bottom: -18vh;
         left: var(--left);
         width: var(--size);
         aspect-ratio: 1;
-        border: 1px solid rgba(255, 230, 164, 0.42);
+        border: 1px solid var(--bubble-line);
         border-radius: 50%;
-        background: rgba(118, 209, 201, 0.08);
+        background:
+          radial-gradient(circle at 32% 26%, rgba(255, 255, 255, 0.94) 0 10%, transparent 12%),
+          radial-gradient(circle at 70% 76%, rgba(255, 255, 255, 0.36), transparent 32%),
+          var(--bubble-fill);
         box-shadow:
-          inset 0 0 14px rgba(255, 255, 255, 0.18),
-          0 0 18px rgba(255, 209, 106, 0.18);
+          inset 0 0 18px rgba(255, 255, 255, 0.52),
+          0 8px 24px var(--bubble-glow);
         opacity: 0;
-        transform: translate3d(0, 0, 0) scale(0.8);
+        transform: translate3d(0, 0, 0) scale(0.74);
         animation: float-bubble var(--duration) linear infinite;
         animation-delay: var(--delay);
+        filter: saturate(1.12);
         will-change: transform, opacity;
       }
 
@@ -115,104 +126,328 @@
         width: 24%;
         aspect-ratio: 1;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.48);
+        background: rgba(255, 255, 255, 0.74);
       }
 
       .bubble:nth-child(1) {
-        --left: 6%;
+        --left: 4%;
         --size: 18px;
-        --duration: 18s;
+        --duration: 17s;
         --delay: -2s;
+        --sway: 22px;
+        --bubble-fill: rgba(255, 143, 184, 0.32);
+        --bubble-line: rgba(255, 111, 166, 0.58);
+        --bubble-glow: rgba(255, 143, 184, 0.3);
       }
 
       .bubble:nth-child(2) {
-        --left: 14%;
+        --left: 9%;
         --size: 34px;
         --duration: 24s;
         --delay: -12s;
+        --sway: -28px;
+        --bubble-fill: rgba(108, 200, 255, 0.3);
+        --bubble-line: rgba(75, 166, 238, 0.58);
+        --bubble-glow: rgba(108, 200, 255, 0.32);
       }
 
       .bubble:nth-child(3) {
-        --left: 23%;
+        --left: 15%;
         --size: 24px;
         --duration: 20s;
         --delay: -7s;
+        --sway: 34px;
+        --bubble-fill: rgba(255, 213, 93, 0.34);
+        --bubble-line: rgba(255, 176, 48, 0.54);
+        --bubble-glow: rgba(255, 190, 69, 0.3);
       }
 
       .bubble:nth-child(4) {
-        --left: 31%;
+        --left: 21%;
         --size: 46px;
-        --duration: 29s;
+        --duration: 30s;
         --delay: -16s;
+        --sway: -36px;
+        --bubble-fill: rgba(142, 219, 117, 0.28);
+        --bubble-line: rgba(90, 188, 80, 0.54);
+        --bubble-glow: rgba(142, 219, 117, 0.3);
       }
 
       .bubble:nth-child(5) {
-        --left: 42%;
+        --left: 26%;
         --size: 20px;
         --duration: 17s;
         --delay: -4s;
+        --sway: 26px;
+        --bubble-fill: rgba(178, 137, 255, 0.26);
+        --bubble-line: rgba(142, 103, 230, 0.52);
+        --bubble-glow: rgba(178, 137, 255, 0.28);
       }
 
       .bubble:nth-child(6) {
-        --left: 51%;
+        --left: 31%;
         --size: 38px;
         --duration: 26s;
         --delay: -18s;
+        --sway: -22px;
+        --bubble-fill: rgba(255, 143, 104, 0.25);
+        --bubble-line: rgba(244, 120, 78, 0.5);
+        --bubble-glow: rgba(255, 143, 104, 0.28);
       }
 
       .bubble:nth-child(7) {
-        --left: 61%;
+        --left: 37%;
         --size: 16px;
         --duration: 16s;
         --delay: -10s;
+        --sway: 18px;
+        --bubble-fill: rgba(66, 189, 179, 0.28);
+        --bubble-line: rgba(37, 155, 149, 0.5);
+        --bubble-glow: rgba(66, 189, 179, 0.28);
       }
 
       .bubble:nth-child(8) {
-        --left: 69%;
+        --left: 43%;
         --size: 52px;
         --duration: 31s;
         --delay: -21s;
+        --sway: 42px;
+        --bubble-fill: rgba(255, 143, 184, 0.24);
+        --bubble-line: rgba(255, 111, 166, 0.5);
+        --bubble-glow: rgba(255, 143, 184, 0.3);
       }
 
       .bubble:nth-child(9) {
-        --left: 78%;
+        --left: 49%;
         --size: 28px;
         --duration: 22s;
         --delay: -6s;
+        --sway: -30px;
+        --bubble-fill: rgba(108, 200, 255, 0.28);
+        --bubble-line: rgba(75, 166, 238, 0.52);
+        --bubble-glow: rgba(108, 200, 255, 0.3);
       }
 
       .bubble:nth-child(10) {
-        --left: 88%;
+        --left: 55%;
         --size: 40px;
         --duration: 27s;
         --delay: -14s;
+        --sway: 32px;
+        --bubble-fill: rgba(255, 213, 93, 0.3);
+        --bubble-line: rgba(255, 176, 48, 0.5);
+        --bubble-glow: rgba(255, 190, 69, 0.28);
       }
 
       .bubble:nth-child(11) {
-        --left: 94%;
+        --left: 61%;
         --size: 22px;
         --duration: 19s;
         --delay: -8s;
+        --sway: -20px;
+        --bubble-fill: rgba(142, 219, 117, 0.28);
+        --bubble-line: rgba(90, 188, 80, 0.5);
+        --bubble-glow: rgba(142, 219, 117, 0.28);
       }
 
       .bubble:nth-child(12) {
-        --left: 36%;
+        --left: 67%;
         --size: 14px;
         --duration: 15s;
         --delay: -1s;
+        --sway: 24px;
+        --bubble-fill: rgba(178, 137, 255, 0.26);
+        --bubble-line: rgba(142, 103, 230, 0.48);
+        --bubble-glow: rgba(178, 137, 255, 0.28);
+      }
+
+      .bubble:nth-child(13) {
+        --left: 72%;
+        --size: 44px;
+        --duration: 28s;
+        --delay: -19s;
+        --sway: -42px;
+        --bubble-fill: rgba(255, 143, 104, 0.25);
+        --bubble-line: rgba(244, 120, 78, 0.5);
+        --bubble-glow: rgba(255, 143, 104, 0.28);
+      }
+
+      .bubble:nth-child(14) {
+        --left: 79%;
+        --size: 26px;
+        --duration: 21s;
+        --delay: -11s;
+        --sway: 22px;
+        --bubble-fill: rgba(66, 189, 179, 0.28);
+        --bubble-line: rgba(37, 155, 149, 0.5);
+        --bubble-glow: rgba(66, 189, 179, 0.28);
+      }
+
+      .bubble:nth-child(15) {
+        --left: 86%;
+        --size: 58px;
+        --duration: 34s;
+        --delay: -24s;
+        --sway: -34px;
+        --bubble-fill: rgba(108, 200, 255, 0.22);
+        --bubble-line: rgba(75, 166, 238, 0.46);
+        --bubble-glow: rgba(108, 200, 255, 0.28);
+      }
+
+      .bubble:nth-child(16) {
+        --left: 93%;
+        --size: 20px;
+        --duration: 18s;
+        --delay: -5s;
+        --sway: 18px;
+        --bubble-fill: rgba(255, 143, 184, 0.3);
+        --bubble-line: rgba(255, 111, 166, 0.54);
+        --bubble-glow: rgba(255, 143, 184, 0.3);
+      }
+
+      .bubble:nth-child(17) {
+        --left: 12%;
+        --size: 52px;
+        --duration: 32s;
+        --delay: -27s;
+        --sway: 46px;
+        --bubble-fill: rgba(142, 219, 117, 0.2);
+        --bubble-line: rgba(90, 188, 80, 0.44);
+        --bubble-glow: rgba(142, 219, 117, 0.26);
+      }
+
+      .bubble:nth-child(18) {
+        --left: 18%;
+        --size: 13px;
+        --duration: 14s;
+        --delay: -6s;
+        --sway: -18px;
+        --bubble-fill: rgba(255, 213, 93, 0.34);
+        --bubble-line: rgba(255, 176, 48, 0.52);
+        --bubble-glow: rgba(255, 190, 69, 0.28);
+      }
+
+      .bubble:nth-child(19) {
+        --left: 34%;
+        --size: 30px;
+        --duration: 23s;
+        --delay: -13s;
+        --sway: 38px;
+        --bubble-fill: rgba(108, 200, 255, 0.26);
+        --bubble-line: rgba(75, 166, 238, 0.48);
+        --bubble-glow: rgba(108, 200, 255, 0.28);
+      }
+
+      .bubble:nth-child(20) {
+        --left: 47%;
+        --size: 18px;
+        --duration: 16s;
+        --delay: -9s;
+        --sway: -20px;
+        --bubble-fill: rgba(255, 143, 184, 0.3);
+        --bubble-line: rgba(255, 111, 166, 0.52);
+        --bubble-glow: rgba(255, 143, 184, 0.28);
+      }
+
+      .bubble:nth-child(21) {
+        --left: 58%;
+        --size: 62px;
+        --duration: 36s;
+        --delay: -29s;
+        --sway: 40px;
+        --bubble-fill: rgba(178, 137, 255, 0.2);
+        --bubble-line: rgba(142, 103, 230, 0.42);
+        --bubble-glow: rgba(178, 137, 255, 0.26);
+      }
+
+      .bubble:nth-child(22) {
+        --left: 64%;
+        --size: 24px;
+        --duration: 20s;
+        --delay: -15s;
+        --sway: -26px;
+        --bubble-fill: rgba(255, 143, 104, 0.24);
+        --bubble-line: rgba(244, 120, 78, 0.48);
+        --bubble-glow: rgba(255, 143, 104, 0.26);
+      }
+
+      .bubble:nth-child(23) {
+        --left: 76%;
+        --size: 16px;
+        --duration: 15s;
+        --delay: -3s;
+        --sway: 16px;
+        --bubble-fill: rgba(66, 189, 179, 0.3);
+        --bubble-line: rgba(37, 155, 149, 0.5);
+        --bubble-glow: rgba(66, 189, 179, 0.28);
+      }
+
+      .bubble:nth-child(24) {
+        --left: 91%;
+        --size: 36px;
+        --duration: 25s;
+        --delay: -17s;
+        --sway: -30px;
+        --bubble-fill: rgba(255, 213, 93, 0.28);
+        --bubble-line: rgba(255, 176, 48, 0.48);
+        --bubble-glow: rgba(255, 190, 69, 0.26);
+      }
+
+      .bubble:nth-child(25) {
+        --left: 2%;
+        --size: 40px;
+        --duration: 29s;
+        --delay: -20s;
+        --sway: 34px;
+        --bubble-fill: rgba(178, 137, 255, 0.22);
+        --bubble-line: rgba(142, 103, 230, 0.44);
+        --bubble-glow: rgba(178, 137, 255, 0.26);
+      }
+
+      .bubble:nth-child(26) {
+        --left: 40%;
+        --size: 12px;
+        --duration: 13s;
+        --delay: -4s;
+        --sway: -16px;
+        --bubble-fill: rgba(142, 219, 117, 0.32);
+        --bubble-line: rgba(90, 188, 80, 0.5);
+        --bubble-glow: rgba(142, 219, 117, 0.26);
+      }
+
+      .bubble:nth-child(27) {
+        --left: 70%;
+        --size: 12px;
+        --duration: 14s;
+        --delay: -8s;
+        --sway: 18px;
+        --bubble-fill: rgba(255, 143, 184, 0.28);
+        --bubble-line: rgba(255, 111, 166, 0.5);
+        --bubble-glow: rgba(255, 143, 184, 0.26);
+      }
+
+      .bubble:nth-child(28) {
+        --left: 84%;
+        --size: 14px;
+        --duration: 15s;
+        --delay: -12s;
+        --sway: -18px;
+        --bubble-fill: rgba(108, 200, 255, 0.3);
+        --bubble-line: rgba(75, 166, 238, 0.5);
+        --bubble-glow: rgba(108, 200, 255, 0.26);
       }
 
       @keyframes background-drift {
         0% {
-          transform: translate3d(-1.5%, -2%, 0) scale(1.06);
+          transform: translate3d(-1%, -1%, 0) scale(1.06);
         }
 
         50% {
-          transform: translate3d(1.5%, 0.5%, 0) scale(1.1);
+          transform: translate3d(1.4%, 0.8%, 0) scale(1.1);
         }
 
         100% {
-          transform: translate3d(0, -5%, 0) scale(1.06);
+          transform: translate3d(-0.4%, -2.8%, 0) scale(1.07);
         }
       }
 
@@ -223,20 +458,20 @@
         }
 
         12% {
-          opacity: 0.58;
+          opacity: 0.76;
         }
 
         50% {
-          transform: translate3d(24px, -54vh, 0) scale(1);
+          transform: translate3d(var(--sway), -56vh, 0) scale(1);
         }
 
         88% {
-          opacity: 0.48;
+          opacity: 0.68;
         }
 
         100% {
           opacity: 0;
-          transform: translate3d(-18px, -112vh, 0) scale(1.16);
+          transform: translate3d(calc(var(--sway) * -0.72), -116vh, 0) scale(1.14);
         }
       }
 
@@ -270,13 +505,13 @@
         width: fit-content;
         margin: 0 0 18px;
         padding: 8px 12px;
-        border: 1px solid rgba(255, 209, 106, 0.36);
+        border: 1px solid rgba(255, 172, 64, 0.45);
         border-radius: 999px;
-        background: rgba(6, 25, 35, 0.44);
-        color: var(--gold);
+        background: rgba(255, 255, 255, 0.72);
+        color: #d36f18;
         font-size: clamp(13px, 2vw, 15px);
         line-height: 1;
-        box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
+        box-shadow: 0 10px 30px rgba(255, 176, 48, 0.18);
       }
 
       h1 {
@@ -285,8 +520,9 @@
         font-size: clamp(52px, 13vw, 128px);
         line-height: 0.92;
         font-weight: 800;
+        color: #263f62;
         text-wrap: balance;
-        text-shadow: 0 14px 46px var(--shadow);
+        text-shadow: 0 10px 34px rgba(97, 138, 166, 0.22);
       }
 
       .subtitle {
@@ -295,7 +531,7 @@
         color: var(--muted);
         font-size: clamp(17px, 3.8vw, 26px);
         line-height: 1.55;
-        text-shadow: 0 10px 32px var(--shadow);
+        text-shadow: 0 4px 18px rgba(255, 255, 255, 0.74);
       }
 
       .gift {
@@ -304,9 +540,9 @@
         padding: clamp(18px, 4vw, 30px);
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: rgba(6, 25, 35, 0.78);
-        box-shadow: 0 24px 68px rgba(0, 0, 0, 0.34);
-        backdrop-filter: blur(18px);
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 0 24px 68px rgba(90, 128, 160, 0.18);
+        backdrop-filter: blur(18px) saturate(1.12);
       }
 
       .message {
@@ -326,9 +562,9 @@
       .player {
         margin: 0 0 18px;
         padding: 16px;
-        border: 1px solid rgba(118, 209, 201, 0.26);
+        border: 1px solid rgba(86, 177, 204, 0.24);
         border-radius: 8px;
-        background: rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.64);
       }
 
       .track {
@@ -356,7 +592,7 @@
         height: 6px;
         overflow: hidden;
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.14);
+        background: rgba(90, 128, 160, 0.14);
       }
 
       .progress-meta {
@@ -380,7 +616,7 @@
         width: 0%;
         height: 100%;
         border-radius: inherit;
-        background: linear-gradient(90deg, var(--sea), var(--gold));
+        background: linear-gradient(90deg, var(--pink), var(--gold), var(--sea));
         transition: width 120ms linear;
       }
 
@@ -390,21 +626,21 @@
         min-height: clamp(320px, 38vh, 520px);
         max-height: clamp(420px, 48vh, 700px);
         overflow: auto;
-        border: 1px solid rgba(247, 239, 224, 0.14);
+        border: 1px solid rgba(86, 177, 204, 0.22);
         border-radius: 8px;
-        background: rgba(6, 25, 35, 0.42);
+        background: rgba(255, 255, 255, 0.58);
       }
 
       .lyrics-panel h2 {
         margin: 0 0 8px;
-        color: var(--gold);
+        color: #d36f18;
         font-size: 14px;
         font-weight: 700;
       }
 
       .lyrics-panel pre {
         margin: 0;
-        color: rgba(247, 239, 224, 0.88);
+        color: rgba(38, 56, 79, 0.88);
         font: inherit;
         font-size: clamp(15px, 1.8vw, 17px);
         line-height: 1.9;
@@ -417,7 +653,7 @@
 
       .lyrics-panel::-webkit-scrollbar-thumb {
         border-radius: 999px;
-        background: rgba(255, 209, 106, 0.38);
+        background: rgba(255, 143, 184, 0.42);
       }
       .actions {
         display: grid;
@@ -435,9 +671,10 @@
         border-radius: 8px;
         padding: 0 12px;
         color: var(--ink);
-        background: var(--soft);
+        background: rgba(255, 255, 255, 0.68);
         cursor: pointer;
         text-decoration: none;
+        box-shadow: 0 8px 22px rgba(90, 128, 160, 0.1);
         transition:
           transform 160ms ease,
           background 160ms ease,
@@ -446,14 +683,14 @@
 
       .action:hover {
         transform: translateY(-1px);
-        border-color: rgba(255, 209, 106, 0.42);
-        background: rgba(247, 239, 224, 0.16);
+        border-color: rgba(255, 143, 184, 0.46);
+        background: rgba(255, 255, 255, 0.86);
       }
 
       .action.primary {
-        border-color: rgba(255, 209, 106, 0.54);
-        background: linear-gradient(135deg, var(--gold), var(--gold-strong));
-        color: #301904;
+        border-color: rgba(255, 173, 67, 0.5);
+        background: linear-gradient(135deg, #ffe072, #ffb15f 52%, #ff8fb8);
+        color: #482412;
         font-weight: 700;
       }
 
@@ -473,9 +710,9 @@
         padding: 12px 14px;
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: rgba(6, 25, 35, 0.92);
+        background: rgba(255, 255, 255, 0.94);
         color: var(--ink);
-        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.36);
+        box-shadow: 0 18px 44px rgba(90, 128, 160, 0.22);
         opacity: 0;
         pointer-events: none;
         transform: translate(-50%, 16px);
@@ -494,13 +731,13 @@
         border: 1px solid var(--line);
         border-radius: 8px;
         padding: 0;
-        background: #092231;
+        background: #fffef7;
         color: var(--ink);
-        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 30px 90px rgba(90, 128, 160, 0.3);
       }
 
       dialog::backdrop {
-        background: rgba(0, 0, 0, 0.54);
+        background: rgba(96, 128, 152, 0.28);
       }
 
       .dialog-inner {
@@ -527,7 +764,7 @@
         place-items: center;
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: var(--soft);
+        background: rgba(255, 255, 255, 0.7);
         color: var(--ink);
         cursor: pointer;
       }
@@ -549,7 +786,7 @@
         border: 1px solid var(--line);
         border-radius: 8px;
         padding: 12px;
-        background: rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.78);
         color: var(--ink);
         outline: none;
       }
@@ -562,7 +799,7 @@
       input:focus,
       textarea:focus {
         border-color: rgba(118, 209, 201, 0.75);
-        box-shadow: 0 0 0 3px rgba(118, 209, 201, 0.14);
+        box-shadow: 0 0 0 3px rgba(108, 200, 255, 0.18);
       }
 
       .dialog-actions {
@@ -607,6 +844,22 @@
   <body>
     <main class="page">
       <div class="bubbles" aria-hidden="true">
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
         <span class="bubble"></span>
         <span class="bubble"></span>
         <span class="bubble"></span>
