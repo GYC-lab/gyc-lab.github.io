@@ -891,7 +891,7 @@
           <div class="player" aria-label="歌曲播放器">
             <div class="track">
               <span class="track-label">TFBOYS《萤火》</span>
-              <span class="track-status" id="trackStatus">准备自动播放</span>
+              <span class="track-status" id="trackStatus">打开即播放</span>
             </div>
             <div class="progress" id="progressBar" role="progressbar" aria-label="播放进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
               <span id="progressFill"></span>
@@ -1013,7 +1013,9 @@
       const timeLabel = document.querySelector("#timeLabel");
       const lyricsText = document.querySelector("#lyricsText");
       const songLink = document.querySelector("#songLink").href;
-      let autoplayAttempted = false;
+      let autoplayStarted = false;
+      let autoplayBlockedToastShown = false;
+      let autoplayAttempts = 0;
 
       function applyState() {
         recipient.textContent = state.to;
@@ -1093,21 +1095,31 @@
 
         try {
           await audio.play();
+          autoplayStarted = true;
           return true;
         } catch (error) {
           setPlayButton(false);
           const blocked = error && error.name === "NotAllowedError";
           trackStatus.textContent = blocked || isAutoplay ? "点一下继续播放" : "音频暂时无法播放";
-          showToast(blocked || isAutoplay ? "浏览器限制自动播放，点一下播放即可" : "当前浏览器没有加载到音频文件");
+          if (!isAutoplay || !autoplayBlockedToastShown) {
+            showToast(blocked || isAutoplay ? "浏览器限制自动播放，点一下播放即可" : "当前浏览器没有加载到音频文件");
+            autoplayBlockedToastShown = true;
+          }
           return false;
         }
       }
 
       function attemptAutoplay() {
-        if (autoplayAttempted) return;
-        autoplayAttempted = true;
-        trackStatus.textContent = "自动播放中";
+        if (autoplayStarted || !audio.paused) return;
+        autoplayAttempts += 1;
+        trackStatus.textContent = autoplayAttempts === 1 ? "正在自动播放" : "继续尝试播放";
         startAudio(true);
+      }
+
+      function scheduleAutoplayRetries() {
+        [120, 520, 1300].forEach((delay) => {
+          window.setTimeout(attemptAutoplay, delay);
+        });
       }
 
       function stripLrcTimestamps(text) {
@@ -1157,12 +1169,14 @@
 
       audio.addEventListener("loadedmetadata", () => {
         updateProgress();
-        trackStatus.textContent = audio.paused ? "准备自动播放" : "正在播放";
+        trackStatus.textContent = audio.paused ? "正在自动播放" : "正在播放";
+        attemptAutoplay();
       });
 
       audio.addEventListener("durationchange", updateProgress);
 
       audio.addEventListener("play", () => {
+        autoplayStarted = true;
         setPlayButton(true);
         trackStatus.textContent = "正在播放";
         updateProgress();
@@ -1188,8 +1202,12 @@
         updateProgress();
       });
 
-      audio.addEventListener("canplay", attemptAutoplay, { once: true });
+      audio.addEventListener("canplay", attemptAutoplay);
+      audio.addEventListener("canplaythrough", attemptAutoplay);
       window.addEventListener("load", attemptAutoplay, { once: true });
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) attemptAutoplay();
+      });
 
       document.querySelector("#shareBtn").addEventListener("click", async () => {
         const shareData = {
@@ -1234,7 +1252,10 @@
       loadLyrics();
       applyState();
       updateProgress();
+      audio.autoplay = true;
+      audio.load();
       attemptAutoplay();
+      scheduleAutoplayRetries();
     </script>
   </body>
 </html>
