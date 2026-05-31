@@ -1,0 +1,4 @@
+﻿Firefly temporary homepage backup
+Created: 20260531_194657
+Original homepage: _pages/about.md
+Restore: copy _pages/about.md from this backup directory back to repo _pages/about.md, then remove assets/firefly-gift if desired.

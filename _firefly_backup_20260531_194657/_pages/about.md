@@ -1,0 +1,152 @@
+---
+permalink: /
+title: ""
+excerpt: "About me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+<div id="toc-box" markdown="1">
+<p class="toc-title"><strong>TABLE OF CONTENTS</strong></p>
+* TOC
+{:toc}
+</div>
+
+<!-- # 👋 **Hello, everyone!** -->
+<span style="font-size:1.6em; font-weight:bold;">👋 Hello, everyone!</span>
+
+I am a Ph.D. student in Fluid Mechanics at Peking University.
+Previously, I received my bachelor’s degree in Aerocraft Design and Engineering from Northwestern Polytechnical University.
+
+My research lies in computational fluid dynamics (CFD), centering on turbulence synthesis and modeling for wall-bounded flows, where vortex structures serve as the fundamental building blocks. My interests also extend to turbomachinery aerodynamics, with a focus on the effects of surface roughness on aerodynamic performance.
+
+$$
+\frac{\partial \boldsymbol{u}}
+  {\partial t}  + 
+  \boldsymbol{u} \cdot   \nabla \boldsymbol{u} = - \frac{1}{\rho } \nabla  p + \nu \nabla ^2 \boldsymbol{u} + \boldsymbol{f} \notag
+$$
+
+Let's expore the world! 
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=100&color=002FA7&width=435&lines=print+*%2C+%22Hello+World!%22;git+commit+-m+%22c'est+la+vie%22" alt="Typing SVG" /></a>
+
+### 📰 **News**
+
+- **2025/08** - Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland
+- **2025/07** - Oral presentation at *Chinese Congress of Theoretical and Applied Mechanics - 2025*, Changsha, China
+- **2024/08** - Oral presentation at *13th National Conference on Fluid Mechanics*, Harbin, China
+- **2024/06** - Oral presentation at *19th OpenFOAM Workshop*, Beijing, China  
+
+---
+
+### 🎓 **Education**
+
+<div class="edu-list">
+  <div class="edu-item">
+    <div class="edu-bullet">•</div>
+    <img class="edu-logo" src="/images/pku_logo.png" alt="Peking University">
+    <div>
+      <strong>Ph.D. Student</strong>, Fluid Mechanics<br>
+      Peking University, School of Mechanics and Engineering Science<br>
+      <small>2022–Present</small>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-bullet">•</div>
+    <img class="edu-logo" src="/images/nwpu_logo.png" alt="Northwestern Polytechnical University">
+    <div>
+      <strong>Bachelor of Engineering</strong>, Aerocraft Design and Engineering<br>
+      Northwestern Polytechnical University, School of Aeronautics<br>
+      <small>2018–2022</small>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-bullet">•</div>
+    <img class="edu-logo" src="/images/zjzj_logo.png" alt="Zhejiang Zhuji Middle School">
+    <div>
+      <strong>High School Student</strong><br>
+      Zhejiang Zhuji Middle School<br>
+      <small>2015–2018</small>
+    </div>
+  </div>
+</div>
+
+---
+
+### 📘 **Teaching**
+
+- **Spring 2024** - *Teaching Assistant*, Computational Fluid Mechanics, College of Engineering, Peking University
+
+---
+
+### 🛠️ **Experience**
+
+- **2022/07-2022/08** - *Assistant Engineer*, Peking University Nanchang Innovation Institute 
+
+---
+
+### 🏆 **Awards**
+
+- **2022** - Outstanding Graduate, NPU
+- **2021** - National Scholarship, NPU
+- **2021** - Finalist, Mathematical Contest in Modeling (MCM)
+- **2020** - Team First Prize, China International Aircraft Design Challenge (CADC)
+- **2020** - First-Class Scholarship from Aviation Industry Corporation of China (AVIC), NPU
+- **2019** - First Prize, 11th Chinese Mathematics Competitions for College Students
+- **2019** - Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship, NPU
+
+---
+
+<!-- ----------------------------------------------------------------------- -->
+<!-- map -->
+{% raw %}
+<div id="clustrmaps-widget" style="width:100%;margin:0.5rem 0;">
+  <script id="clustrmaps"
+          src="https://cdn.clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=a&t=tt"
+          async></script>
+</div>
+{% endraw %}
+
+<!-- ----------------------------------------------------------------------- -->
+<!-- time -->
+<!-- <p id="localtime" style="font-size:0.9em; color:gray;"></p>
+<script>
+(function () {
+  function updateTime() {
+    try {
+      const now = new Date();
+      const options = {
+        timeZone: 'Asia/Shanghai',
+        hour12: false,
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      };
+      const timeString = now.toLocaleString('en-US', options);
+      var el = document.getElementById('localtime');
+      if (el) el.textContent = '🕒 Local time: ' + timeString;
+    } catch (e) {
+      // 少数极旧浏览器不支持 timeZone 参数：退化到本地时间
+      var el = document.getElementById('localtime');
+      if (el) el.textContent = '🕒 Local time: ' + new Date().toLocaleString();
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      updateTime();
+      setInterval(updateTime, 1000);
+    });
+  } else {
+    updateTime();
+    setInterval(updateTime, 1000);
+  }
+})();
+</script> -->

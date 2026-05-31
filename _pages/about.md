@@ -1,152 +1,645 @@
----
+﻿---
 permalink: /
-title: ""
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+layout: null
+sitemap: false
 ---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061923" />
+    <meta
+      name="description"
+      content="一张可以分享的《萤火》送歌小卡，送给喜欢 TFBOYS 的朋友。"
+    />
+    <title>送你一首《萤火》</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #f7efe0;
+        --muted: rgba(247, 239, 224, 0.74);
+        --soft: rgba(247, 239, 224, 0.11);
+        --line: rgba(247, 239, 224, 0.18);
+        --gold: #ffd16a;
+        --gold-strong: #ffad3d;
+        --sea: #76d1c9;
+        --deep: #061923;
+        --night: #0a2636;
+        --shadow: rgba(0, 0, 0, 0.42);
+      }
 
-<div id="toc-box" markdown="1">
-<p class="toc-title"><strong>TABLE OF CONTENTS</strong></p>
-* TOC
-{:toc}
-</div>
+      * {
+        box-sizing: border-box;
+      }
 
-<!-- # 👋 **Hello, everyone!** -->
-<span style="font-size:1.6em; font-weight:bold;">👋 Hello, everyone!</span>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          "Microsoft YaHei",
+          "PingFang SC",
+          "Hiragino Sans GB",
+          system-ui,
+          sans-serif;
+        background: var(--deep);
+        color: var(--ink);
+        letter-spacing: 0;
+      }
 
-I am a Ph.D. student in Fluid Mechanics at Peking University.
-Previously, I received my bachelor’s degree in Aerocraft Design and Engineering from Northwestern Polytechnical University.
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
 
-My research lies in computational fluid dynamics (CFD), centering on turbulence synthesis and modeling for wall-bounded flows, where vortex structures serve as the fundamental building blocks. My interests also extend to turbomachinery aerodynamics, with a focus on the effects of surface roughness on aerodynamic performance.
+      .page {
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+        background:
+          linear-gradient(180deg, rgba(3, 14, 21, 0.2) 0%, rgba(3, 14, 21, 0.78) 64%, rgba(3, 14, 21, 0.95) 100%),
+          url("/assets/firefly-gift/firefly-night.png") center / cover no-repeat;
+      }
 
-$$
-\frac{\partial \boldsymbol{u}}
-  {\partial t}  + 
-  \boldsymbol{u} \cdot   \nabla \boldsymbol{u} = - \frac{1}{\rho } \nabla  p + \nu \nabla ^2 \boldsymbol{u} + \boldsymbol{f} \notag
-$$
+      .page::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background:
+          radial-gradient(circle at 48% 68%, rgba(255, 183, 70, 0.2), transparent 28%),
+          linear-gradient(90deg, rgba(1, 8, 12, 0.34), transparent 24%, transparent 76%, rgba(1, 8, 12, 0.32));
+      }
 
-Let's expore the world! 
+      .shell {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: minmax(430px, 1fr) auto;
+      }
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=100&color=002FA7&width=435&lines=print+*%2C+%22Hello+World!%22;git+commit+-m+%22c'est+la+vie%22" alt="Typing SVG" /></a>
+      .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: min(100%, 980px);
+        padding: clamp(28px, 6vw, 72px);
+      }
 
-### 📰 **News**
+      .kicker {
+        width: fit-content;
+        margin: 0 0 18px;
+        padding: 8px 12px;
+        border: 1px solid rgba(255, 209, 106, 0.36);
+        border-radius: 999px;
+        background: rgba(6, 25, 35, 0.44);
+        color: var(--gold);
+        font-size: clamp(13px, 2vw, 15px);
+        line-height: 1;
+        box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
+      }
 
-- **2025/08** - Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland
-- **2025/07** - Oral presentation at *Chinese Congress of Theoretical and Applied Mechanics - 2025*, Changsha, China
-- **2024/08** - Oral presentation at *13th National Conference on Fluid Mechanics*, Harbin, China
-- **2024/06** - Oral presentation at *19th OpenFOAM Workshop*, Beijing, China  
+      h1 {
+        max-width: 11ch;
+        margin: 0;
+        font-size: clamp(52px, 13vw, 128px);
+        line-height: 0.92;
+        font-weight: 800;
+        text-wrap: balance;
+        text-shadow: 0 14px 46px var(--shadow);
+      }
 
----
+      .subtitle {
+        max-width: 680px;
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: clamp(17px, 3.8vw, 26px);
+        line-height: 1.55;
+        text-shadow: 0 10px 32px var(--shadow);
+      }
 
-### 🎓 **Education**
+      .gift {
+        width: min(100% - 28px, 760px);
+        margin: 0 auto clamp(16px, 4vw, 34px);
+        padding: clamp(18px, 4vw, 30px);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(6, 25, 35, 0.78);
+        box-shadow: 0 24px 68px rgba(0, 0, 0, 0.34);
+        backdrop-filter: blur(18px);
+      }
 
-<div class="edu-list">
-  <div class="edu-item">
-    <div class="edu-bullet">•</div>
-    <img class="edu-logo" src="/images/pku_logo.png" alt="Peking University">
-    <div>
-      <strong>Ph.D. Student</strong>, Fluid Mechanics<br>
-      Peking University, School of Mechanics and Engineering Science<br>
-      <small>2022–Present</small>
-    </div>
-  </div>
+      .message {
+        margin: 0 0 20px;
+        color: var(--ink);
+        font-size: clamp(18px, 4vw, 26px);
+        line-height: 1.58;
+      }
 
-  <div class="edu-item">
-    <div class="edu-bullet">•</div>
-    <img class="edu-logo" src="/images/nwpu_logo.png" alt="Northwestern Polytechnical University">
-    <div>
-      <strong>Bachelor of Engineering</strong>, Aerocraft Design and Engineering<br>
-      Northwestern Polytechnical University, School of Aeronautics<br>
-      <small>2018–2022</small>
-    </div>
-  </div>
+      .signature {
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.5;
+      }
 
-  <div class="edu-item">
-    <div class="edu-bullet">•</div>
-    <img class="edu-logo" src="/images/zjzj_logo.png" alt="Zhejiang Zhuji Middle School">
-    <div>
-      <strong>High School Student</strong><br>
-      Zhejiang Zhuji Middle School<br>
-      <small>2015–2018</small>
-    </div>
-  </div>
-</div>
+      .player {
+        margin: 0 0 18px;
+        padding: 14px;
+        border: 1px solid rgba(118, 209, 201, 0.26);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+      }
 
----
+      .track {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
 
-### 📘 **Teaching**
+      .track-label {
+        color: var(--ink);
+        font-size: 15px;
+        font-weight: 700;
+      }
 
-- **Spring 2024** - *Teaching Assistant*, Computational Fluid Mechanics, College of Engineering, Peking University
+      .track-status {
+        color: var(--muted);
+        font-size: 13px;
+        text-align: right;
+      }
 
----
+      .progress {
+        position: relative;
+        height: 6px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+      }
 
-### 🛠️ **Experience**
+      .progress span {
+        display: block;
+        width: 0%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--sea), var(--gold));
+        transition: width 120ms linear;
+      }
 
-- **2022/07-2022/08** - *Assistant Engineer*, Peking University Nanchang Innovation Institute 
+      .actions {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+      }
 
----
+      .action {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0 12px;
+        color: var(--ink);
+        background: var(--soft);
+        cursor: pointer;
+        text-decoration: none;
+        transition:
+          transform 160ms ease,
+          background 160ms ease,
+          border-color 160ms ease;
+      }
 
-### 🏆 **Awards**
+      .action:hover {
+        transform: translateY(-1px);
+        border-color: rgba(255, 209, 106, 0.42);
+        background: rgba(247, 239, 224, 0.16);
+      }
 
-- **2022** - Outstanding Graduate, NPU
-- **2021** - National Scholarship, NPU
-- **2021** - Finalist, Mathematical Contest in Modeling (MCM)
-- **2020** - Team First Prize, China International Aircraft Design Challenge (CADC)
-- **2020** - First-Class Scholarship from Aviation Industry Corporation of China (AVIC), NPU
-- **2019** - First Prize, 11th Chinese Mathematics Competitions for College Students
-- **2019** - Kewei (Kewei Aerospace Technology Group Co., Ltd) Scholarship, NPU
+      .action.primary {
+        border-color: rgba(255, 209, 106, 0.54);
+        background: linear-gradient(135deg, var(--gold), var(--gold-strong));
+        color: #301904;
+        font-weight: 700;
+      }
 
----
+      .action svg {
+        width: 18px;
+        height: 18px;
+        flex: 0 0 18px;
+      }
 
-<!-- ----------------------------------------------------------------------- -->
-<!-- map -->
-{% raw %}
-<div id="clustrmaps-widget" style="width:100%;margin:0.5rem 0;">
-  <script id="clustrmaps"
-          src="https://cdn.clustrmaps.com/map_v2.js?d=iqd9kZ8IQ98udYDlxAuY6xF5gSJe3u_aF6WZy-8p0LU&cl=ffffff&w=a&t=tt"
-          async></script>
-</div>
-{% endraw %}
+      .toast {
+        position: fixed;
+        left: 50%;
+        bottom: 22px;
+        z-index: 6;
+        width: max-content;
+        max-width: min(88vw, 420px);
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(6, 25, 35, 0.92);
+        color: var(--ink);
+        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.36);
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%, 16px);
+        transition:
+          opacity 180ms ease,
+          transform 180ms ease;
+      }
 
-<!-- ----------------------------------------------------------------------- -->
-<!-- time -->
-<!-- <p id="localtime" style="font-size:0.9em; color:gray;"></p>
-<script>
-(function () {
-  function updateTime() {
-    try {
-      const now = new Date();
-      const options = {
-        timeZone: 'Asia/Shanghai',
-        hour12: false,
-        weekday: 'short',
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit'
+      .toast.show {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+
+      dialog {
+        width: min(92vw, 520px);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0;
+        background: #092231;
+        color: var(--ink);
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+      }
+
+      dialog::backdrop {
+        background: rgba(0, 0, 0, 0.54);
+      }
+
+      .dialog-inner {
+        padding: 22px;
+      }
+
+      .dialog-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .dialog-head h2 {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      .close {
+        display: inline-grid;
+        width: 38px;
+        height: 38px;
+        place-items: center;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--soft);
+        color: var(--ink);
+        cursor: pointer;
+      }
+
+      .field {
+        display: grid;
+        gap: 8px;
+        margin-bottom: 14px;
+      }
+
+      label {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--ink);
+        outline: none;
+      }
+
+      textarea {
+        min-height: 104px;
+        resize: vertical;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: rgba(118, 209, 201, 0.75);
+        box-shadow: 0 0 0 3px rgba(118, 209, 201, 0.14);
+      }
+
+      .dialog-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      @media (max-width: 680px) {
+        .shell {
+          grid-template-rows: minmax(380px, 1fr) auto;
+        }
+
+        .hero {
+          padding: 28px 22px 42px;
+        }
+
+        .actions {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .action {
+          min-height: 46px;
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .actions,
+        .dialog-actions {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="shell">
+        <section class="hero" aria-label="送歌开场">
+          <p class="kicker" id="recipient">给喜欢 TFBOYS 的你</p>
+          <h1>萤火</h1>
+          <p class="subtitle">
+            有些歌像夜里的小光，不吵也不远，刚好陪人想起童年、朋友和慢慢长大的自己。
+          </p>
+        </section>
+
+        <section class="gift" aria-label="送歌内容">
+          <p class="message" id="message">
+            把这首歌送给你。愿你听见它的时候，心里还有一盏很亮、很温柔的小灯。
+          </p>
+          <p class="signature" id="signature">来自：一个想把好歌分享给你的人</p>
+
+          <div class="player" aria-label="歌曲播放器">
+            <div class="track">
+              <span class="track-label">TFBOYS《萤火》片段</span>
+              <span class="track-status" id="trackStatus">准备播放</span>
+            </div>
+            <div class="progress" aria-hidden="true">
+              <span id="progressFill"></span>
+            </div>
+            <audio id="audio" preload="metadata" src="/assets/firefly-gift/yinghuo.mp3"></audio>
+          </div>
+
+          <div class="actions">
+            <button class="action primary" type="button" id="playBtn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path id="playIcon" d="M8 5v14l11-7-11-7Z" fill="currentColor" />
+              </svg>
+              <span id="playLabel">播放</span>
+            </button>
+            <a class="action" id="songLink" href="https://y.qq.com/n/ryqq/search?w=TFBOYS%20%E8%90%A4%E7%81%AB" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              平台入口
+            </a>
+            <button class="action" type="button" id="copyBtn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="9" y="9" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              复制文案
+            </button>
+            <button class="action" type="button" id="shareBtn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M16 6 12 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 2v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              分享
+            </button>
+            <button class="action" type="button" id="customBtn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 20h9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="m16.5 3.5 4 4L8 20H4v-4L16.5 3.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+              定制
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <dialog id="editor">
+      <form class="dialog-inner" method="dialog">
+        <div class="dialog-head">
+          <h2>定制这张小卡</h2>
+          <button class="close" value="cancel" aria-label="关闭">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="field">
+          <label for="toInput">收件人</label>
+          <input id="toInput" name="to" maxlength="24" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="fromInput">署名</label>
+          <input id="fromInput" name="from" maxlength="24" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="msgInput">留言</label>
+          <textarea id="msgInput" name="msg" maxlength="90"></textarea>
+        </div>
+
+        <div class="dialog-actions">
+          <button class="action primary" type="button" id="saveBtn">更新小卡</button>
+          <button class="action" type="button" id="copyLinkBtn">复制链接</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      const defaults = {
+        to: "喜欢 TFBOYS 的你",
+        from: "一个想把好歌分享给你的人",
+        msg: "把这首歌送给你。愿你听见它的时候，心里还有一盏很亮、很温柔的小灯。",
       };
-      const timeString = now.toLocaleString('en-US', options);
-      var el = document.getElementById('localtime');
-      if (el) el.textContent = '🕒 Local time: ' + timeString;
-    } catch (e) {
-      // 少数极旧浏览器不支持 timeZone 参数：退化到本地时间
-      var el = document.getElementById('localtime');
-      if (el) el.textContent = '🕒 Local time: ' + new Date().toLocaleString();
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      updateTime();
-      setInterval(updateTime, 1000);
-    });
-  } else {
-    updateTime();
-    setInterval(updateTime, 1000);
-  }
-})();
-</script> -->
+
+      const params = new URLSearchParams(window.location.search);
+      const state = {
+        to: params.get("to") || defaults.to,
+        from: params.get("from") || defaults.from,
+        msg: params.get("msg") || defaults.msg,
+      };
+
+      const recipient = document.querySelector("#recipient");
+      const message = document.querySelector("#message");
+      const signature = document.querySelector("#signature");
+      const toast = document.querySelector("#toast");
+      const editor = document.querySelector("#editor");
+      const toInput = document.querySelector("#toInput");
+      const fromInput = document.querySelector("#fromInput");
+      const msgInput = document.querySelector("#msgInput");
+      const audio = document.querySelector("#audio");
+      const playBtn = document.querySelector("#playBtn");
+      const playLabel = document.querySelector("#playLabel");
+      const playIcon = document.querySelector("#playIcon");
+      const trackStatus = document.querySelector("#trackStatus");
+      const progressFill = document.querySelector("#progressFill");
+      const songLink = document.querySelector("#songLink").href;
+
+      function applyState() {
+        recipient.textContent = `给${state.to}`;
+        message.textContent = state.msg;
+        signature.textContent = `来自：${state.from}`;
+        toInput.value = state.to;
+        fromInput.value = state.from;
+        msgInput.value = state.msg;
+      }
+
+      function currentUrl() {
+        const url = new URL(window.location.href);
+        url.searchParams.set("to", state.to);
+        url.searchParams.set("from", state.from);
+        url.searchParams.set("msg", state.msg);
+        return url.toString();
+      }
+
+      function giftText(includePageLink = true) {
+        const lines = [
+          `送你一首 TFBOYS 的《萤火》。`,
+          state.msg,
+          `来自：${state.from}`,
+          `听歌：${songLink}`,
+        ];
+        if (includePageLink) lines.push(`小卡：${currentUrl()}`);
+        return lines.join("\n");
+      }
+
+      async function copyText(text, label) {
+        try {
+          await navigator.clipboard.writeText(text);
+          showToast(label);
+        } catch {
+          showToast("当前浏览器不支持直接复制");
+        }
+      }
+
+      function showToast(text) {
+        toast.textContent = text;
+        toast.classList.add("show");
+        window.clearTimeout(showToast.timer);
+        showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 2100);
+      }
+
+      document.querySelector("#copyBtn").addEventListener("click", () => {
+        copyText(giftText(false), "文案已复制");
+      });
+
+      playBtn.addEventListener("click", async () => {
+        if (audio.error) {
+          showToast("把音频文件放到 assets/yinghuo.mp3 后即可直接播放");
+          return;
+        }
+
+        if (audio.paused) {
+          try {
+            await audio.play();
+          } catch {
+            showToast("当前浏览器没有加载到音频文件");
+          }
+        } else {
+          audio.pause();
+        }
+      });
+
+      audio.addEventListener("loadedmetadata", () => {
+        trackStatus.textContent = "点击播放片段";
+      });
+
+      audio.addEventListener("play", () => {
+        playLabel.textContent = "暂停";
+        playIcon.setAttribute("d", "M7 5h4v14H7V5Zm6 0h4v14h-4V5Z");
+        trackStatus.textContent = "正在播放";
+      });
+
+      audio.addEventListener("pause", () => {
+        playLabel.textContent = "播放";
+        playIcon.setAttribute("d", "M8 5v14l11-7-11-7Z");
+        trackStatus.textContent = audio.currentTime > 0 ? "已暂停" : "点击播放片段";
+      });
+
+      audio.addEventListener("timeupdate", () => {
+        if (!audio.duration) return;
+        progressFill.style.width = `${Math.min((audio.currentTime / audio.duration) * 100, 100)}%`;
+      });
+
+      audio.addEventListener("ended", () => {
+        progressFill.style.width = "0%";
+        trackStatus.textContent = "播放完成";
+      });
+
+      audio.addEventListener("error", () => {
+        trackStatus.textContent = "等待音频文件";
+      });
+
+      document.querySelector("#shareBtn").addEventListener("click", async () => {
+        const shareData = {
+          title: "送你一首《萤火》",
+          text: `送你一首 TFBOYS 的《萤火》：${state.msg}`,
+          url: currentUrl(),
+        };
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+          } catch {
+            return;
+          }
+        } else {
+          copyText(giftText(true), "分享内容已复制");
+        }
+      });
+
+      document.querySelector("#customBtn").addEventListener("click", () => {
+        applyState();
+        editor.showModal();
+      });
+
+      document.querySelector("#saveBtn").addEventListener("click", () => {
+        state.to = toInput.value.trim() || defaults.to;
+        state.from = fromInput.value.trim() || defaults.from;
+        state.msg = msgInput.value.trim() || defaults.msg;
+        applyState();
+        window.history.replaceState(null, "", currentUrl());
+        editor.close();
+        showToast("小卡已更新");
+      });
+
+      document.querySelector("#copyLinkBtn").addEventListener("click", () => {
+        state.to = toInput.value.trim() || defaults.to;
+        state.from = fromInput.value.trim() || defaults.from;
+        state.msg = msgInput.value.trim() || defaults.msg;
+        applyState();
+        window.history.replaceState(null, "", currentUrl());
+        copyText(currentUrl(), "链接已复制");
+      });
+
+      applyState();
+    </script>
+  </body>
+</html>
