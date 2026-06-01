@@ -552,13 +552,6 @@
         line-height: 1.58;
       }
 
-      .signature {
-        margin: 0 0 24px;
-        color: var(--muted);
-        font-size: 15px;
-        line-height: 1.5;
-      }
-
       .player {
         margin: 0 0 18px;
         padding: 16px;
@@ -886,7 +879,6 @@
           <p class="message" id="message">
             儿童节快乐。愿你一直保留孩子般的单纯、勇敢和发光的心。
           </p>
-          <p class="signature" id="signature">来自：一个想把好歌分享给你的人</p>
 
           <div class="player" aria-label="歌曲播放器">
             <div class="track">
@@ -964,10 +956,6 @@
           <input id="toInput" name="to" maxlength="24" autocomplete="off" />
         </div>
         <div class="field">
-          <label for="fromInput">署名</label>
-          <input id="fromInput" name="from" maxlength="24" autocomplete="off" />
-        </div>
-        <div class="field">
           <label for="msgInput">留言</label>
           <textarea id="msgInput" name="msg" maxlength="90"></textarea>
         </div>
@@ -984,24 +972,20 @@
     <script>
       const defaults = {
         to: "儿童节小礼物",
-        from: "一个想把好歌分享给你的人",
         msg: "儿童节快乐。愿你一直保留孩子般的单纯、勇敢和发光的心。",
       };
 
       const params = new URLSearchParams(window.location.search);
       const state = {
         to: params.get("to") || defaults.to,
-        from: params.get("from") || defaults.from,
         msg: params.get("msg") || defaults.msg,
       };
 
       const recipient = document.querySelector("#recipient");
       const message = document.querySelector("#message");
-      const signature = document.querySelector("#signature");
       const toast = document.querySelector("#toast");
       const editor = document.querySelector("#editor");
       const toInput = document.querySelector("#toInput");
-      const fromInput = document.querySelector("#fromInput");
       const msgInput = document.querySelector("#msgInput");
       const audio = document.querySelector("#audio");
       const playBtn = document.querySelector("#playBtn");
@@ -1020,16 +1004,13 @@
       function applyState() {
         recipient.textContent = state.to;
         message.textContent = state.msg;
-        signature.textContent = `来自：${state.from}`;
         toInput.value = state.to;
-        fromInput.value = state.from;
         msgInput.value = state.msg;
       }
 
       function currentUrl() {
         const url = new URL(window.location.href);
         url.searchParams.set("to", state.to);
-        url.searchParams.set("from", state.from);
         url.searchParams.set("msg", state.msg);
         return url.toString();
       }
@@ -1038,7 +1019,6 @@
         const lines = [
           `送你一首 TFBOYS 的《萤火》。`,
           state.msg,
-          `来自：${state.from}`,
           `听歌：${songLink}`,
         ];
         if (includePageLink) lines.push(`小卡：${currentUrl()}`);
@@ -1233,9 +1213,8 @@
 
       document.querySelector("#saveBtn").addEventListener("click", () => {
         state.to = toInput.value.trim() || defaults.to;
-        state.from = fromInput.value.trim() || defaults.from;
         state.msg = msgInput.value.trim() || defaults.msg;
-      applyState();
+        applyState();
         window.history.replaceState(null, "", currentUrl());
         editor.close();
         showToast("小卡已更新");
@@ -1243,9 +1222,8 @@
 
       document.querySelector("#copyLinkBtn").addEventListener("click", () => {
         state.to = toInput.value.trim() || defaults.to;
-        state.from = fromInput.value.trim() || defaults.from;
         state.msg = msgInput.value.trim() || defaults.msg;
-      applyState();
+        applyState();
         window.history.replaceState(null, "", currentUrl());
         copyText(currentUrl(), "链接已复制");
       });
