@@ -111,6 +111,12 @@ Let's expore the world!
 </div>
 {% endraw %}
 
+<div id="flagcounter-widget" style="width:100%;margin:0.75rem 0;text-align:center;">
+  <a href="https://info.flagcounter.com/QhQ7" target="_blank" rel="noopener">
+    <img src="https://s01.flagcounter.com/count/QhQ7/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
+  </a>
+</div>
+
 <!-- ----------------------------------------------------------------------- -->
 <!-- time -->
 <!-- <p id="localtime" style="font-size:0.9em; color:gray;"></p>
