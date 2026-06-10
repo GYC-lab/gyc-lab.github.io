@@ -18,7 +18,7 @@ author_profile: true
   <img src="{{ '/images/roughRANS_ML.jpg' | relative_url }}" alt="SWAT" style="width: 75%; max-width: 600px; height: auto;">
 </p>
 
-- X. Zhu, **Y. Ge**, Y. Zhao\*, Z. Xiao and R. D. Sandberg, Boundary layer transition induced by surface roughness distributed over a low-pressure turbine blade, *Journal of Turbomachinery*, 2026. [<a href=" https://doi.org/10.1115/1.4072013" target="_blank">paper</a>]
+- X. Zhu, **Y. Ge**, Y. Zhao\*, Z. Xiao and R. D. Sandberg, Boundary layer transition induced by surface roughness distributed over a low-pressure turbine blade, *Journal of Turbomachinery*, TURBO-26-1003, 2026. [<a href=" https://doi.org/10.1115/1.4072013" target="_blank">paper</a>]
 
 <!-- [<a href="https://arxiv.org/abs/2510.22310" target="_blank">arXiv</a>] -->
 
