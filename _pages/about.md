@@ -34,6 +34,7 @@ Let's expore the world!
 
 ### 📰 **News**
 
+- **2026/08** - Oral presentation at *14th National Conference on Fluid Mechanics*, Qingdao, China
 - **2025/08** - Oral presentation at *2nd European Fluid Dynamics Conference*, Dublin, Ireland
 - **2025/07** - Oral presentation at *Chinese Congress of Theoretical and Applied Mechanics - 2025*, Changsha, China
 - **2024/08** - Oral presentation at *13th National Conference on Fluid Mechanics*, Harbin, China
