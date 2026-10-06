@@ -12,7 +12,7 @@ author_profile: true
   <img src="{{ '/images/SWAT.jpg' | relative_url }}" alt="SWAT" style="width: 75%; max-width: 600px; height: auto;">
 </p>
 
-- **Y. Ge**, X. Zhu, Y. Fang and Y. Zhao\*, A machine-learning-enhanced four-equation model for predicting roughness induced transition, *AIAA Journal*, 2026. [<a href="https://doi.org/10.2514/1.J066541" target="_blank">paper</a>]
+- **Y. Ge**, X. Zhu, Y. Fang and Y. Zhao\*, Machine-learning-enhanced four-equation model for predicting roughness-induced transition, *AIAA Journal*, **64**(10), 5632–5648, 2026. [<a href="https://doi.org/10.2514/1.J066541" target="_blank">paper</a>]
 
 <p style="text-align: center;">
   <img src="{{ '/images/roughRANS_ML.jpg' | relative_url }}" alt="SWAT" style="width: 75%; max-width: 600px; height: auto;">
